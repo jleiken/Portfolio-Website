@@ -4,6 +4,8 @@ let fs = require("fs");
 let express = require("express");
 let app = express();
 
+app.set('port', (process.env.PORT || 5000));
+
 app.use("/assets", express.static(__dirname + "/assets"));
 
 app.get("/", index);
@@ -35,12 +37,12 @@ app.get("/resume", (req, res) => {
 	});
 }); 
 
-app.listen(5000, () => {
+app.listen(app.get('port'), () => {
 	"use strict";
   	console.log('Listening on port 5000');
 });
 
-app.use(function (req, res, next) {
+app.use((req, res, next) => {
 	"use strict";
 	fs.readFile("404.html", (err, data) => {
 		if (err) {
