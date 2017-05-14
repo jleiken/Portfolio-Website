@@ -1,0 +1,17 @@
+#my-name {
+	font-family: Rubik Mono One;
+	position: fixed;
+}
+
+body {
+	background: url("granoff.jpg");
+	background-size: 200%;
+}
+
+a {
+	color: darkorange;
+}
+
+a:hover {
+	color: orangered;
+}
