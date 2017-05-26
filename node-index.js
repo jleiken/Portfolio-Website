@@ -13,7 +13,7 @@ app.get("/index", index);
 
 function index(req, res) {
 	"use strict";
-	fs.readFile("index.html", (err, data) => {
+	fs.readFile("resume.html", (err, data) => {
 		if (err) {
 			console.log("uh oh, index failed");
 		} else {
