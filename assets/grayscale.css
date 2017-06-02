@@ -2,6 +2,7 @@
  * Start Bootstrap - Grayscale v3.3.7+1 (http://startbootstrap.com/template-overviews/grayscale)
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ * Modified by Jacob Leiken
  */
 body {
 	width: 100%;
@@ -36,7 +37,7 @@ p {
 	}
 }
 a {
-	color: #42DCA3;
+	color: #F49542;
 	-webkit-transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
@@ -57,9 +58,6 @@ a:hover, a:focus {
 }
 .navbar-toggle {
 	float: right;
-}
-.navbar-header {
-	width: 100%;
 }
 .navbar-custom .navbar-toggle {
 	color: white;
@@ -226,7 +224,7 @@ a:hover, a:focus {
 	width: 100%;
 	padding: 50px 0;
 	color: white;
-	background: url("./emp-curves.jpg") no-repeat center center scroll;
+	background: url("./emp-edge.jpg") no-repeat center center scroll;
 	background-color: black;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -261,15 +259,15 @@ a:hover, a:focus {
 	border-radius: 0;
 }
 .btn-default {
-	border: 1px solid #42DCA3;
-	color: #42DCA3;
+	border: 1px solid #F49542;
+	color: #F49542;
 	background-color: transparent;
 }
 .btn-default:hover, .btn-default:focus {
-	border: 1px solid #42DCA3;
+	border: 1px solid #F49542;
 	outline: none;
 	color: black;
-	background-color: #42DCA3;
+	background-color: #F49542;
 }
 ul.banner-social-buttons {
 	margin-top: 0;
