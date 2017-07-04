@@ -4,7 +4,8 @@
   "description": "My resume site",
   "main": "node-index.js",
   "scripts": {
-    "start": "node node-index.js"
+    "start": "node node-index.js",
+    "test": "node tests.js"
   },
   "repository": {
     "type": "git",
