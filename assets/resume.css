@@ -137,6 +137,7 @@ a:hover, a:focus {
 }
 .intro .intro-body .brand-heading {
 	font-size: 40px;
+	text-shadow: 1px 1px lightslategrey;
 }
 .intro .intro-body .intro-text {
 	font-size: 18px;
