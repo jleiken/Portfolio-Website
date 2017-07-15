@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/jleiken/Portfolio-Website/issues"
   },
-  "homepage": "https://github.com/jleiken/Portfolio-Website#readme"
+  "homepage": "https://github.com/jleiken/Portfolio-Website#readme",
+  "engines": {
+    "node": "8.1.4"
+  }
 }
