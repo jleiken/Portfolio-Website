@@ -126,6 +126,9 @@ a:hover, a:focus {
 	color: white;
 	background: url("https://s3.amazonaws.com/jleiken-site/emp-clouds-sky.jpg") no-repeat bottom center scroll;
 	background-color: black;
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -225,8 +228,11 @@ a:hover, a:focus {
 	width: 100%;
 	padding: 50px 0;
 	color: white;
-	background: url("https://s3.amazonaws.com/jleiken-site/emp-edge.jpg") no-repeat center center scroll;
+	background: url("https://s3.amazonaws.com/jleiken-site/granoff.jpg") no-repeat bottom center scroll;
 	background-color: black;
+	background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -261,8 +267,10 @@ a:hover, a:focus {
 }
 .btn-default {
 	border: 1px solid #F49542;
-	color: #F49542;
-	background-color: transparent;
+	/*color: #F49542;
+	background-color: transparent;*/
+	color: white;
+	background-color: #F49542;
 }
 .btn-default:hover, .btn-default:focus {
 	border: 1px solid #F49542;
