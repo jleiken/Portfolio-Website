@@ -124,7 +124,7 @@ a:hover, a:focus {
 	padding: 100px 0;
 	text-align: center;
 	color: white;
-	background: url("https://s3.amazonaws.com/jleiken-site/emp-clouds-sky.jpg") no-repeat bottom center scroll;
+	background: url("./emp-clouds-sky.jpg") no-repeat bottom center scroll;
 	background-color: black;
 	background-attachment: fixed;
   background-position: center;
@@ -228,7 +228,7 @@ a:hover, a:focus {
 	width: 100%;
 	padding: 50px 0;
 	color: white;
-	background: url("https://s3.amazonaws.com/jleiken-site/granoff.jpg") no-repeat bottom center scroll;
+	background: url("./granoff.jpg") no-repeat bottom center scroll;
 	background-color: black;
 	background-attachment: fixed;
   background-position: center;
