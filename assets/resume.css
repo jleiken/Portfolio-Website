@@ -344,9 +344,6 @@ body {
 #about .further-info {
 	margin-bottom: 35px;
 }
-.about-h {
-	margin-bottom: 35px !important;
-}
 
 #portfolio .portfolio-item {
 	margin: 0 0 15px;
@@ -488,7 +485,7 @@ body {
 .img-responsive {
 	width: 100%;
 }
-.img-no-margin {
+.no-bottom-margin {
 	margin-bottom: 0px !important;
 }
 .img-caption {
@@ -496,4 +493,30 @@ body {
 	font-size: 16px;
 	color: #777;
 	text-align: center;
+}
+table {
+	width: 100%;
+	font-size: 18px;
+	border-collapse: separate;
+    border-spacing: 1em 0;
+}
+table tr td:nth-child(odd) {
+	text-align: right;
+	text-transform: uppercase;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+table tr td:nth-child(even) {
+	text-align: left;
+}
+#work-table {
+	border-collapse: separate;
+    border-spacing: 1em 0.2em;
+}
+tbody::before
+{
+    content: '';
+    display: block;
+    height: 10px;
 }
