@@ -6,7 +6,6 @@ $(document).ready(() => {
 	let previous_image = images[0]
 	
 	$( "#cards" ).scroll(function() {
-		console.log("called");
 		moveMapDependingOnScroll();
 	});
 	
