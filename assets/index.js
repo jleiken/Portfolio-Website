@@ -1,8 +1,8 @@
 new WOW().init();
 
 $(document).ready(() => {
-	const images = [$("#iss"), $("#cit")]
-	const sections = [$("#first-card"), $("#classes")]
+	const images = [$("#iss"), $("#cit"), $("#microsoft"), $("#granoff"), $("#emp")]
+	const sections = [$("#first-card"), $("#classes"), $("#work"), $("#portfolio"), $("#contact")]
 	let previous_image = images[0]
 	
 	$( "#cards" ).scroll(function() {

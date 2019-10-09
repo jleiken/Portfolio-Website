@@ -1,37 +1,188 @@
-#my-name {
-	font-family: Rubik Mono One;
-	position: fixed;
-}
-
 body {
-	background: url("https://s3.amazonaws.com/jleiken-site/granoff.jpg");
-	background-size: 200%;
+	background-color: #303437;
+	color: #E5E5E5;
+	font-family: Lato, 'Helvetica Neue', sans-serif;
+
+	padding: 0;
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
 }
 
-a {
-	color: darkorange;
+h1 {
+	font-family: Roboto;
+	font-weight: 900;
 }
 
-a:hover {
-	color: orangered;
+#main h1 {
+	font-size: 5em;
 }
 
-.important-links {
+h2 {
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 3em;
+
+	margin-top: inherit;
+}
+
+#header-div h1 {
 	font-size: 1.5em;
+}
+
+#nav-bar li {
+	display: inline-block;
+	font-family: Roboto;
+	font-weight: 500;
+	font-size: 1.5em;
+}
+
+#nav-bar a {
+	color: white;
+}
+
+#nav-bar a:hover {
+	color: #d4d4d4
+}
+
+#header-div {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+
+	top: 0;
+	padding: 10px 20px;
+	z-index: 99;
+
+	background-color: #383C3F;
+	color: white;
+}
+
+.section-header {
+	text-align: center;
+}
+
+#main {
+	display: grid;
+	grid-template: 1fr / 1fr 500px 1fr 1fr 1fr 1fr 1fr 1fr;
+	width: 100%;
+	left:0px;
+	bottom: 0;
+	overflow-y:auto;
+}
+
+#cards{
+	grid-column-start: 1;
+	grid-column-end: 3;
+	grid-row: 1;
+	z-index: 1000;
+	height: calc(100vh - 73px);
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+#images {
+	grid-column: 3 / 9;
+	grid-row: 1;
+	z-index: -1;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#images > img {
+	height: 100vh;
+}
+
+section {
+	min-height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@media only screen and (max-width : 700px) {
+	#nav-bar {
+		display: none;
+	}
+
+	#images {
+		display: none;
+	}
+
+	#main {
+		display: block;
+	}
+}
+
+table {
+	width: 100%;
+	font-size: 18px;
+	border-collapse: separate;
+	border-spacing: 1em 0;
+}
+
+table tr td:nth-child(odd) {
+	text-align: right;
+	text-transform: uppercase;
+	font-family: Roboto;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+table tr td:nth-child(even) {
+	text-align: left;
+}
+
+h3 {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+p {
+	padding-left: 7%;
+	padding-right: 5%;
+	margin-bottom: inherit;
+}
+
+.company {
+	margin-bottom: 3px;
 	font-weight: bold;
 }
 
-#body-404 {
-	display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+.time-frame {
+	margin-top: 0;
+	margin-bottom: inherit;
 }
 
-#title-404 {
-	background-color: rgba(1, 1, 1, 0.5);
-	color: darkorange;
-	font-family: Rubik Mono One;
-	margin-left: 2em;
-    margin-right: 2em;
+.column {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.divider {
+	height: 2em;
+	width: 2em;
+}
+
+.btn {
+	background-color: rgb(245, 203, 13);
+	border-radius: 5px;
+	font-size: 1.25em;
+	width: fit-content;
+	height: 2em;
+	line-height: 2em;
+	text-decoration: none;
+	padding: .2em 1em;
+	color: white;
+
+	margin-bottom: 1em;
+}
+
+.btn:hover {
+	background-color: rgb(221, 183, 13);
 }
