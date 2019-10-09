@@ -1,0 +1,27 @@
+body {
+	background: url("./granoff.jpg");
+	background-size: 200%;
+}
+
+a {
+	color: darkorange;
+}
+
+a:hover {
+	color: orangered;
+}
+
+#body-404 {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#title-404 {
+	background-color: rgba(1, 1, 1, 0.5);
+	color: darkorange;
+	font-family: Rubik Mono One;
+	margin-left: 2em;
+    margin-right: 2em;
+}
