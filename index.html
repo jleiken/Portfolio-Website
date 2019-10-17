@@ -36,12 +36,161 @@
 </div>
 
 <div id="main">
-	<div id="images">
-		<img id="iss" src="assets/equisat-deployer.jpg"/>
-		<img id="cit" src="assets/cit.jpeg" hidden />
-		<img id="microsoft" src="assets/microsoft.jpeg" hidden />
-		<img id="granoff" src="assets/granoff.jpg" hidden />
-		<img id="emp" src="assets/emp-clouds-sky.jpg" hidden />
+	<div id="side-content">
+		<img id="iss" src="assets/equisat-deployer.jpg" alt="EQUiSat as it was deployed out of the ISS" />
+		<img id="cit" src="assets/cit.jpeg" alt="The CIT at Brown" hidden />
+		<img id="microsoft" src="assets/microsoft.jpeg" alt="Microsoft" hidden />
+		<img id="granoff" src="assets/granoff.jpg" alt="Granoff Center at Brown" hidden />
+		<img id="emp" src="assets/emp-clouds-sky.jpg" alt="The MoPoP in Seattle" hidden />
+
+		<div class="portfolio-modal" id="taskr-modal" hidden>
+			<h2>Taskr</h2>
+			<p>I was a Software Engineering Intern on 
+				<a href="https://www.microsoft.com/en-us/cloud-platform/microsoft-intune">Intune's</a> 
+				mobile app management (MAM) team for Android. They develop an SDK that allows IT
+				pros to make tightly managed apps. I made an example app demonstrating how to use 
+				this SDK called Taskr. Taskr is open source and available on 
+				<a href="https://github.com/msintuneappsdk/Taskr-Sample-Intune-Android-App">GitHub</a>.
+			</p>
+
+			<p>I finished this project in half of my internship, so I spent the rest of the 
+				time fixing bugs on sprints with my team. I specifically focused on bugs that 
+				had arisen from multi-process Android apps.
+			</p>
+
+			<p><em>Date: May 2018 - August 2018</em></p>
+			<p><em>Categories: Android, Java, UI/UX, Frontend, Backend, Full Stack</em></p>
+		</div>
+
+		<div class="portfolio-modal" id="equisat-modal" hidden>
+			<h2>EQUiSat</h2>
+
+			<img src="assets/equisat-deployer.jpg" alt="EQUiSat as it was deployed out of the ISS">
+			<p class="img-caption">EQUiSat as it was deployed out of the International Space Station</p>
+
+			<p>At Brown Space Engineers, we are dedicated to making space more accessible for 
+				people of all backgrounds. Following our schematics, anyone can make a satellite 
+				for only $3,776. Successfully deployed on July 13th, 2018, EQUiSat is the first 
+				satellite to test <a href="https://en.wikipedia.org/wiki/Lithium_iron_phosphate_battery">LiFePO</a> 
+				batteries in space and its four LEDs are visible by the naked eye. I have worked
+				on organizing satellite operations using <a href="http://www.freertos.org/">FreeRTOS</a> 
+				and optimizing data transmission, especially error packaging.
+			</p>
+
+			<p> I am now project manager and co-president, so in addition to coordinating satellite 
+				operations and managing our over 75 members, I am also leading the design of our 
+				next CubeSat. I am responsible for effective communication with NASA, the University, 
+				and any other external entity.
+			</p>
+
+			<p>For more information, you can visit the team website <a href="https://brownspace.org/">here</a>.
+				View our team GitHub <a href="https://github.com/BrownSpaceEngineering/">here</a>.
+			</p>
+
+			<p><em>Date: September 2016 - Present</em></p>
+			<p><em>Categories: Systems, Avionics</em></p>
+		</div>
+		
+		<div class="portfolio-modal" id="wikispeedia-modal" hidden>
+			<h2>Wikispeedia</h2>
+
+			<img src="assets/wikispeedia_screencap.PNG" alt="A screen capture of Wikispeedia">
+
+			<p>The <a href="https://en.wikipedia.org/wiki/Wikiracing">Wikipedia game</a> is an old 
+				standby for bored teens, but it's rarely done right. For our final project for 
+				CS 32 at Brown, Mckenna Cisler, Rohan Jha, Sean Hastings and I decided to perfect 
+				this age-old game. I worked on the user experience, including lobby experience, 
+				site-wide design, and graphic design. I also set up hosting so anyone can play online.
+			</p>
+
+			<p><strong>Want to play the game yourself?</strong> You can play 
+				<a href="http://wikispeedia.herokuapp.com">here</a>! Since it is hosted on Heroku's 
+				free tier, please give the app a few seconds to start up.
+				You can view the code on our <a href="https://github.com/MckennaCisler/wikispeedia">project GitHub repo</a>.
+			</p>
+
+			<p><em>Date: March - May 2017</em></p>
+			<p><em>Categories: Hosting, UI/UX, Frontend, Web Development, Graphic Design</em></p>
+		</div>
+		
+		<div class="portfolio-modal" id="nws-modal" hidden>
+			<h2>National Weather Service</h2>
+			<p>Despite having the best weather information available online, the National Weather 
+				Service's website looks like it hasn't been updated since the 1990s. I check it 
+				most days, and almost every time I do I'm frustrated by the terrible interface. 
+				So when we chose websites to redesign for CSCI 1300: UI/UX, I knew I wanted to
+				choose it. By simplifying the interface, a move that also makes it look more modern, 
+				I believe I made the information significantly more accessible. This is the 
+				interface that the National Weather Service should have for the 21st century.
+			</p>
+
+			<img src="assets/nws-mockup.png" alt="A preliminary wire frame of the interface">
+			<p class="img-caption">A preliminary wire frame of the interface</p>
+
+			<p>I started by making wire frames of the interface, got feedback on them, then 
+				made a high-fidelity mockup in Adobe XD. The feedback I got on that interface 
+				was positive, so I made a web-ready version of the forecast page, pictured below.
+				It is designed to respond properly to any screen size.
+			</p>
+
+			<img src="assets/nws-redesign.png" alt="My NWS interface">
+			<p class="img-caption">My redesign of the NWS forecast page</p>
+
+			<img src="assets/nws-current.png" alt="Then current NWS interface">
+			<p class="img-caption">A screenshot from December 2018 of the NWS forecast page</p>
+
+			<p>The project is hosted on
+				<a href="https://jleiken.github.io/nws-redesign">GitHub pages</a>
+				and the code is available <a href="https://github.com/jleiken/nws-redesign">on GitHub</a>.
+			</p>
+
+			<p><em>Date: October 2018</em></p>
+			<p><em>Categories: UI/UX, HTML/CSS/Javascript</em></p>
+		</div>
+		
+		<div class="portfolio-modal" id="tsp-modal" hidden>
+			<h2>The Social Playlist</h2>
+			<p>Ever wanted to play music at a party but allow your friends to pick some of the 
+				music? The Social Playlist attempts to solve that problem by allowing a host 
+				to set up a room which visitors can join. Visitors can suggest songs (which are 
+				automatically queued on YouTube) which the host can rearrange or reject. We also
+				attempted to use Microsoft's Emotion API to suggest a playlist based on the mood 
+				detected by a device's webcam. This project was created at
+				<a href="https://hackatbrown.org">Hack@Brown 2017</a>. 
+				I made all user-facing components and attempted to integrate Microsoft's Emotion API.
+			</p>
+
+			<p>For installation directions and more information, view our 
+				<a href="https://github.com/jkennan/The-Social-Playlist">project GitHub repo</a>.
+			</p>
+
+			<p><em>Date: February 2017</em></p>
+			<p><em>Categories: UI/UX, Frontend, Web Development</em></p>
+		</div>
+		
+		<div class="portfolio-modal" id="rockets-modal" hidden>
+			<h2>Rocket Filtering</h2>
+			<p>This website, written for CSCI 1300: UI/UX, demonstrates a number of the principles 
+				learned in that class. First, it's clear that the only controllable sections of 
+				the interface are at the top of the page. Filters are on the top left, then 
+				sorting, then search is on the top right. These are fairly standardized positions 
+				for the respective components. The grid layout make it easier for users to see more 
+				information than a linear layout would have been. These features work to promote 
+				the central goal of the site - comparing rockets by a variety of criteria. With 
+				more information this site could be useful for space mission managers to compare and
+				pick rockets for launches.
+			</p>
+
+			<p>The project is live <a href="https://rocket-filtering.herokuapp.com/">here</a> 
+				and the code is available 
+				<a href="https://github.com/jleiken/filtering-rockets">on GitHub</a>.
+			</p>
+
+			<img src="assets/rockets.png" alt="Rockets filtering interface">
+
+			<p><em>Date: November 2018</em></p>
+			<p><em>Categories: React, Javascript, UI/UX</em></p>
+		</div>
 	</div>
 
 	<div id="cards">
@@ -128,7 +277,38 @@
 		<section id="portfolio">
 			<h2 class="section-header">Portfolio</h2>
 
-			<p>Coming soon! I got really excited about this style of website, so I had to update mine to it. And it's so much better than the old one so I <i>had</i> to push to master. On the off chance anyone's actually looking at this page, I promise it'll be updated by 10/17/19.</p>
+			<div id="portfolio-grid">
+				<div class="portfolio-item" id="taskr">
+					<img src="assets/taskr-icon.png" />
+					<div>Taskr</div>
+					<div><em>Android, Full Stack</em></div>
+				</div>
+				<div class="portfolio-item" id="equisat">
+					<img src="assets/equisat-logo.png" />
+					<div>EQUiSat</div>
+					<div><em>C, Embedded Systems</em></div>
+				</div>
+				<div class="portfolio-item" id="wikispeedia">
+					<img src="assets/wikispeedia.png" />
+					<div>Wikispeedia</div>
+					<div><em>UI/UX, Hosting</em></div>
+				</div>
+				<div class="portfolio-item" id="nws">
+					<img src="assets/NWS-Logo.png" />
+					<div>National Weather Service</div>
+					<div><em>UI/UX</em></div>
+				</div>
+				<div class="portfolio-item" id="tsp">
+					<img src="assets/youtube-logo.png" />
+					<div>The Social Playlist</div>
+					<div><em>Meteor, UI/UX</em></div>
+				</div>
+				<div class="portfolio-item" id="rockets">
+					<img src="assets/bse-logo.png" />
+					<div>Rocket Filtering</div>
+					<div><em>React, UI/UX</em></div>
+				</div>
+			</div>
 		</section>
 
 		<section id="contact">

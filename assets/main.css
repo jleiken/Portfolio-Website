@@ -1,3 +1,4 @@
+/* General formatting */
 body {
 	background-color: #303437;
 	color: #E5E5E5;
@@ -26,6 +27,7 @@ h2 {
 	margin-top: inherit;
 }
 
+/* Website header */
 #header-div h1 {
 	font-size: 1.5em;
 }
@@ -58,6 +60,7 @@ h2 {
 	color: white;
 }
 
+/* Structure of the website */
 .section-header {
 	text-align: center;
 }
@@ -81,7 +84,7 @@ h2 {
 	overflow-x: hidden;
 }
 
-#images {
+#side-content {
 	grid-column: 3 / 9;
 	grid-row: 1;
 	z-index: -1;
@@ -92,7 +95,7 @@ h2 {
 	align-items: center;
 }
 
-#images > img {
+#side-content > img {
 	height: 100vh;
 }
 
@@ -103,12 +106,13 @@ section {
 	justify-content: center;
 }
 
+/* Adaptive for mobile */
 @media only screen and (max-width : 700px) {
 	#nav-bar {
 		display: none;
 	}
 
-	#images {
+	#side-content {
 		display: none;
 	}
 
@@ -117,6 +121,7 @@ section {
 	}
 }
 
+/* Classes and work section */
 table {
 	width: 100%;
 	font-size: 18px;
@@ -164,13 +169,14 @@ p {
 	align-items: center;
 }
 
+/* Contact section */
 .divider {
 	height: 2em;
 	width: 2em;
 }
 
 .btn {
-	background-color: rgb(245, 203, 13);
+	background-color: #5B769F;
 	border-radius: 5px;
 	font-size: 1.25em;
 	width: fit-content;
@@ -184,5 +190,64 @@ p {
 }
 
 .btn:hover {
-	background-color: rgb(221, 183, 13);
+	background-color: #6881A6;
+}
+
+/* Portfolio */
+#portfolio {
+	margin-top: 3em;
+}
+
+#portfolio-grid {
+	display: grid;
+	grid-template: 1fr 1fr 1fr / 1fr 1fr;
+
+	height: 55em;
+}
+
+.portfolio-item {
+	width: fit-content;
+	height: fit-content;
+
+	background-color: #E5E5E5;
+	color: black;
+	text-align: center;
+}
+
+.portfolio-item > img {
+	width: 12em;
+	height: 12em;
+}
+
+.portfolio-item > div {
+	margin-top: .5em;
+	margin-bottom: .5em;
+}
+
+.portfolio-item:hover {
+	/* TODO */
+}
+
+/* Portfolio Modals */
+.portfolio-modal {
+	min-height: 100%;
+	overflow-y: scroll;
+	width: 90%;
+	padding-left: 5%;
+	padding-right: 5%;
+	padding-top: 5%;
+
+	background-color: #E5E5E5;
+	color: black;
+	text-align: center;
+}
+
+.portfolio-modal > img {
+	width: 100%;
+	margin-top: 1em;
+}
+
+.img-caption {
+	color: #444444;
+	margin-top: 5px;
 }

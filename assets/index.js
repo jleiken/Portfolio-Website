@@ -3,18 +3,37 @@ new WOW().init();
 $(document).ready(() => {
 	const images = [$("#iss"), $("#cit"), $("#microsoft"), $("#granoff"), $("#emp")]
 	const sections = [$("#first-card"), $("#classes"), $("#work"), $("#portfolio"), $("#contact")]
-	let previous_image = images[0]
+	const portfolioModals = {
+		"taskr": $("#taskr-modal"),
+		"equisat": $("#equisat-modal"),
+		"wikispeedia": $("#wikispeedia-modal"),
+		"nws": $("#nws-modal"),
+		"tsp": $("#tsp-modal"),
+		"rockets": $("#rockets-modal")
+	};
+	let previous_item = images[0]
 	
-	$( "#cards" ).scroll(function() {
+	$("#cards").scroll(function() {
 		moveMapDependingOnScroll();
 	});
+
+	$(".portfolio-item").click(function() {
+		changeScrollItem(portfolioModals[this.id]);
+	});
+
+	function changeScrollItem(item) {
+		previous_item.hide();
+		previous_item = item;
+		previous_item.show();
+	}
 	
 	function moveMapDependingOnScroll() {
 		for (let i = 0; i < sections.length; i++) {
 			if (isScrolledIntoTopHalf(sections[i])) {
-				previous_image.hide();
-				previous_image = images[i]
-				previous_image.show();
+				if (sections[i] == $("portfolio") && previous_item in portfolioModals.values) {
+				} else {
+					changeScrollItem(images[i]);
+				}
 				return;
 			}
 		}
