@@ -11,31 +11,29 @@ $(document).ready(() => {
 		"tsp": $("#tsp-modal"),
 		"rockets": $("#rockets-modal")
 	};
-	let previous_item = images[0]
-	let previous_name = ""
+	let previous_item = images[0];
+	let previous_portfolio_item = null;
 	
 	$("#cards").scroll(function() {
 		moveMapDependingOnScroll();
 	});
 
 	$(".portfolio-item").click(function() {
-		changeScrollItem(portfolioModals[this.id]);
+		previous_portfolio_item = portfolioModals[this.id];
+		changeScrollItem(previous_portfolio_item);
 	});
 
 	function changeScrollItem(item) {
 		previous_item.hide();
 		previous_item = item;
-		previous_name = item.attr("id");
-		if (previous_name.indexOf("-modal") != -1) {
-			previous_name = previous_name.split("-modal")[0];
-		}
 		previous_item.show();
 	}
 	
 	function moveMapDependingOnScroll() {
 		for (let i = 0; i < sections.length; i++) {
 			if (isScrolledIntoTopHalf(sections[i])) {
-				if (sections[i].attr("id") == "portfolio" && previous_name in portfolioModals) {
+				if (sections[i].attr("id") == "portfolio" && previous_portfolio_item) {
+					changeScrollItem(previous_portfolio_item);
 				} else {
 					changeScrollItem(images[i]);
 				}
