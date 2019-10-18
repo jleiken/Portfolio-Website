@@ -12,6 +12,7 @@ $(document).ready(() => {
 		"rockets": $("#rockets-modal")
 	};
 	let previous_item = images[0]
+	let previous_name = ""
 	
 	$("#cards").scroll(function() {
 		moveMapDependingOnScroll();
@@ -24,13 +25,17 @@ $(document).ready(() => {
 	function changeScrollItem(item) {
 		previous_item.hide();
 		previous_item = item;
+		previous_name = item.attr("id");
+		if (previous_name.indexOf("-modal") != -1) {
+			previous_name = previous_name.split("-modal")[0];
+		}
 		previous_item.show();
 	}
 	
 	function moveMapDependingOnScroll() {
 		for (let i = 0; i < sections.length; i++) {
 			if (isScrolledIntoTopHalf(sections[i])) {
-				if (sections[i] == $("portfolio") && previous_item in portfolioModals.values) {
+				if (sections[i].attr("id") == "portfolio" && previous_name in portfolioModals) {
 				} else {
 					changeScrollItem(images[i]);
 				}
