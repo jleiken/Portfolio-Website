@@ -1,0 +1,64 @@
+/* general formatting */
+#content {
+	overflow-y: scroll;
+}
+
+/* website header */
+#header h1 {
+	font-size: $base-font-size;
+}
+
+#nav-bar li {
+	display: inline-block;
+	font-weight: 500;
+}
+
+#nav-bar a {
+	color: white;
+	text-decoration: none;
+}
+
+#nav-bar a:hover {
+	color: #d4d4d4
+}
+
+#header {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+
+	top: 0;
+	padding: 10px 20px;
+
+	background-color: #383C3F;
+	color: white;
+}
+
+/* terminal formatting */
+#content {
+	margin-left: $spacing-unit;
+	margin-right: $spacing-unit;
+}
+
+.item-group > p {
+	margin-bottom: $text-spacing-unit;
+	margin-top: 0;
+}
+
+.item-group {
+	margin-top: $spacing-unit;
+}
+
+.prompt {
+	margin-right: 0;
+	display: inline;
+}
+
+#terminal {
+	border: none;
+	border-bottom: 2px solid $text-color;
+	background-color: $background-color;
+    color: $text-color;
+    font-family: $base-font-family;
+	font-size: 1em;
+}
