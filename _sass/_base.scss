@@ -1,7 +1,7 @@
-p:nth-child(1) {
+#initial-item-group > p:nth-child(1) {
     color: $red;
 }
 
-p:nth-child(2) {
+#initial-item-group > p:nth-child(2) {
     color: $purple;
 }

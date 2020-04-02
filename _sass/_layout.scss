@@ -1,8 +1,3 @@
-/* general formatting */
-#content {
-	overflow-y: scroll;
-}
-
 /* website header */
 #header h1 {
 	font-size: $base-font-size;
@@ -29,6 +24,8 @@
 
 	top: 0;
 	padding: 10px 20px;
+	width: -webkit-fill-available;
+	position: fixed;
 
 	background-color: #383C3F;
 	color: white;
@@ -36,8 +33,8 @@
 
 /* terminal formatting */
 #content {
-	margin-left: $spacing-unit;
-	margin-right: $spacing-unit;
+	padding-top: 2em;
+	margin: $spacing-unit;
 }
 
 .item-group > p {
@@ -61,4 +58,5 @@
     color: $text-color;
     font-family: $base-font-family;
 	font-size: 1em;
+	width: 95%;
 }

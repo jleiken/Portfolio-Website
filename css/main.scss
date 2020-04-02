@@ -36,10 +36,6 @@ body {
     margin: 0;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
-
 @media only screen and (max-width: $laptop-size) {
     #terminal {
         display: none;
