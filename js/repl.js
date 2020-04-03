@@ -1,6 +1,6 @@
-export class REPL {
-    static cursor = `<span style="color: #cccccc">$</span>`;
+import { cursor } from "./util.js";
 
+export class REPL {
     constructor(terminal, scrollArea) {
         this.terminal = terminal;
         this.scrollArea = scrollArea;
@@ -16,15 +16,6 @@ export class REPL {
         });
     }
 
-    static commandMapFromArray(commands) {
-        let map = {};
-        for (let command of commands) {
-            map[command.keyword] = command;
-        }
-
-        return map;
-    }
-
     handleCommand() {
         let input = this.terminal.value;
         let components = input.split(" ");
@@ -33,7 +24,9 @@ export class REPL {
         if (input.indexOf(">") != -1 && input.indexOf("<") != -1) {
             commandOutput = "<p>Nothing gets sent to the server so you can XSS yourself all you want 😉</p>";
         } else if (command in this.commands) {
-            commandOutput = this.commands[command].execute(components.slice(1,))
+            let args = components.slice(1,);
+            args = args.filter(arg => arg !== "");
+            commandOutput = this.commands[command].execute(args);
         } else if (command === "") {
             commandOutput = "<p></p>";
         } else {
@@ -41,10 +34,12 @@ export class REPL {
         }
 
         // create the new item and add it to the scroll area
-        let newItemGroup = document.createElement("div")
-        newItemGroup.className = "item-group";
-        newItemGroup.innerHTML = `<p>${REPL.cursor} ${input}</p>${commandOutput}`;
-        this.scrollArea.insertBefore(newItemGroup, this.terminal.parentNode);
+        if (commandOutput) {
+            let newItemGroup = document.createElement("div")
+            newItemGroup.className = "item-group";
+            newItemGroup.innerHTML = `<p>${cursor} ${input}</p>${commandOutput}`;
+            this.scrollArea.insertBefore(newItemGroup, this.terminal.parentNode);
+        }
 
         // reset terminal and scroll to the bottom of the page
         this.terminal.value = "";
@@ -53,13 +48,14 @@ export class REPL {
 }
 
 export class Command {
-    constructor(keyword, opts, handler) {
+    constructor(keyword, opts, helpStr, handler) {
         this.keyword = keyword;
         this.opts = opts;
+        this.helpStr = helpStr;
         this.executor = handler;
     }
 
     execute(args) {
-        this.executor(this.opts, args)
+        return this.executor(this.opts, args)
     }
 }

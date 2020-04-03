@@ -3,11 +3,20 @@ layout: default
 ---
 
 <div class="item-group" id="initial-item-group">
-	<p><span style="color: #cccccc">$</span> Jacob Leiken</p>
-	<p>Software Engineer. Microsoft. Brown University.</p>
+	<p><span class="prompt">$</span> Jacob Leiken</p>
+	<p>Software Engineer. Microsoft. Brown University '20.</p>
 </div>
 
-<div class="item-group active-group">
+<div class="item-group" id="active-group">
 	<div class="prompt">$</div>
 	<input type="text" id="terminal" placeholder="type your command here - try help">
+</div>
+
+<div id="static-site" hidden>
+	<div class="item-group">
+		<p><span class="prompt">$</span> <span class="command">contact</span></p>
+		<p id="contact-email">Email: <a href="mailto:jacob@jleiken.com" target="_blank">jacob@jleiken.com</a></p>
+		<p id="contact-github">Github: <a href="https://github.com/jleiken" target="_blank">jleiken</a></p>
+		<p id="contact-linkedin">LinkedIn: <a href="https://www.linkedin.com/in/jacobleiken/" target="_blank">jacobleiken</a></p>
+	</div>
 </div>

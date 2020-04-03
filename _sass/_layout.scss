@@ -49,6 +49,7 @@
 .prompt {
 	margin-right: 0;
 	display: inline;
+	color: $text-color;
 }
 
 #terminal {
@@ -59,4 +60,9 @@
     font-family: $base-font-family;
 	font-size: 1em;
 	width: 95%;
+}
+
+/* general */
+.indented {
+	margin-left: $spacing-unit;
 }

@@ -35,9 +35,3 @@ body {
     font-size: $base-font-size;
     margin: 0;
 }
-
-@media only screen and (max-width: $laptop-size) {
-    #terminal {
-        display: none;
-    }
-}
