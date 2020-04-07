@@ -43,7 +43,9 @@ export class REPL {
 
         // reset terminal and scroll to the bottom of the page
         this.terminal.value = "";
-        window.scrollTo(0, document.body.scrollHeight);
+        if (!this.terminal.parentElement.hidden) {
+            window.scrollTo(0, document.body.scrollHeight);
+        }
     }
 }
 

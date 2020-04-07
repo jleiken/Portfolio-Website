@@ -2,20 +2,27 @@ import * as util from "./util.js";
 import * as repl from "./repl.js";
 
 const commands = [
-    new repl.Command("resume", [], "Outputs a link to my resume", (opts, args) => { 
-        return `<p>Here's my <a href="https://drive.google.com/file/d/1Tq5pmC2qCVdoS1GEJAXiZDRt0Q_1u29O/view?usp=sharing" target="_blank">resume</a>.</p>`;
-    }),
-    new repl.Command("contact", ["email", "github", "linkedin"], "Outputs my contact information - all if no option is provided", (opts, args) => {
-        const optOuts = [
-            document.getElementById("contact-email").outerHTML,
-            document.getElementById("contact-github").outerHTML,
-            document.getElementById("contact-linkedin").outerHTML,
-        ];
-        return util.outputFromOptsAndArgs(opts, optOuts, args);
-    }),
-
-    new repl.Command("static", [], "Converts the site to its static form (no terminal)", toStaticSite),
-    new repl.Command("clear", [], "Clears any pre-existing output, giving you a new blank page", clearScrollArea),
+    new repl.Command("resume", [],
+        "Outputs a link to my resume",
+        (opts, args) => `<p>Here's my <a href="https://drive.google.com/file/d/1Tq5pmC2qCVdoS1GEJAXiZDRt0Q_1u29O/view?usp=sharing" target="_blank">resume</a>.</p>`),
+    new repl.Command("work", ["current", "microsoft-intern", "amazon", "brown-cs"],
+        "Outputs the places I've worked - all if no option is provided",
+        (opts, args) => util.outputFromOptsAndArgs(opts, "work-", args)),
+    new repl.Command("projects", ["taskr", "equisat", "wikispeedia", "this-site"],
+        "Outputs the projects I've worked on - all if no option is provided",
+        (opts, args) => util.outputFromOptsAndArgs(opts, "project-", args)),
+    new repl.Command("classes", [],
+        "Outputs the list of relevant classes I've taken",
+        (opts, args) => document.getElementById("classes-table").outerHTML),
+    new repl.Command("contact", ["email", "github", "linkedin"],
+        "Outputs my contact information - all if no option is provided",
+        (opts, args) => util.outputFromOptsAndArgs(opts, "contact-", args)),
+    new repl.Command("static", [],
+        "Converts the site to its static form (no terminal)",
+        toStaticSite),
+    new repl.Command("clear", [],
+        "Clears any pre-existing output, giving you a new blank page",
+        clearScrollArea),
 ];
 
 document.addEventListener("DOMContentLoaded", function () {

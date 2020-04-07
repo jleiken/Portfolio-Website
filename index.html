@@ -5,6 +5,10 @@ layout: default
 <div class="item-group" id="initial-item-group">
 	<p><span class="prompt">$</span> Jacob Leiken</p>
 	<p>Software Engineer. Microsoft. Brown University '20.</p>
+
+	<a onclick="toStaticSite(false, true)" id="unstatic" class="smaller-text" href="javascript:void(0);" hidden>
+		For an interactive version of this site, 
+		tap here. It is hidden by default on smaller screen sizes.</a>
 </div>
 
 <div class="item-group" id="active-group">
@@ -14,9 +18,185 @@ layout: default
 
 <div id="static-site" hidden>
 	<div class="item-group">
+		<p><span class="prompt">$</span> <span class="command">work</span></p>
+
+		<div id="work-current">
+			<p class="option">microsoft</p>
+			<p class="time-frame smaller-text">August 2020 - </p>
+			<p class="smaller-text">In August I will start as a full-time Software Engineer on Microsoft's
+				COSINE (Core OS and Intelligent Edge) team</p>
+		</div>
+
+		<div id="work-microsoft-intern">
+			<p class="option">microsoft</p>
+			<p class="time-frame smaller-text">Summer 2018 and Summer 2019</p>
+			<p class="smaller-text">
+				As a Software Engineering Intern in 2018 I worked on Intune for Android. I developed an open source
+				Android
+				example app demonstrating my team's SDK and fixed bugs.
+				More information available below or by typing the command
+				<span class="command">project</span> <span class="option">taskr</span>
+				<br><br>
+				As a Software Engineering Intern in 2019 I worked on Windows Accessibility. I added features to
+				Narrator,
+				Window's screen reader, and participated in an award-winning Hackathon team</p>
+		</div>
+
+		<div id="work-amazon">
+			<p class="option">amazon</p>
+			<p class="time-frame smaller-text">Summer 2017</p>
+			<p class="smaller-text">As an Amazon Future Engineer I developed Alexa skills to help
+				Amazon Sellers during the fulfillment process</p>
+		</div>
+
+		<div id="work-brown-cs">
+			<p class="option">brown department of computer science</p>
+			<p class="time-frame smaller-text">May 2017 to May 2020</p>
+			<p class="smaller-text">I TAed and HTAed for CSCI 0190: An Accelerated Introduction to Computer Science,
+				TAed and HTAed for CSCI 0320: Intro to Software Eng,
+				and TAed for CSCI 1730: Programming Languages.
+				I managed students and TAs, developed assignments, graded, held office hours, and taught labs</p>
+		</div>
+	</div>
+
+	<div class="item-group">
+		<p><span class="prompt">$</span> <span class="command">projects</span></p>
+
+		<div id="project-taskr">
+			<p class="option">taskr</p>
+			<p class="time-frame smaller-text">May 2018 - August 2018</p>
+			<p class="smaller-text">I was a Software Engineering Intern on
+				<a href="https://www.microsoft.com/en-us/cloud-platform/microsoft-intune" target="_blank">Intune's</a>
+				mobile app management (MAM) team for Android. They develop an SDK that allows IT
+				pros to make tightly managed apps. I made an example app demonstrating how to use
+				this SDK called Taskr. Taskr is open source and available on
+				<a href="https://github.com/msintuneappsdk/Taskr-Sample-Intune-Android-App" target="_blank">GitHub</a>.
+				<br><br>
+				I finished this project in half of my internship, so I spent the rest of the
+				time fixing bugs on sprints with my team. I specifically focused on bugs that
+				had arisen from multi-process Android apps.
+			</p>
+		</div>
+
+		<div id="project-equisat">
+			<p class="option">equisat</p>
+			<p class="time-frame smaller-text">September 2016 - May 2020</p>
+			<img src="assets/equisat-deployer.jpg" alt="EQUiSat as it was deployed out of the ISS" id="img-equisat">
+
+			<p class="smaller-text">
+				Brown Space Engineering is are dedicated to making space more accessible for
+				people of all backgrounds. Following our schematics, anyone can make a satellite
+				for only $3,776. Successfully deployed on July 13th, 2018, EQUiSat is the first
+				satellite to test <a href="https://en.wikipedia.org/wiki/Lithium_iron_phosphate_battery">LiFePO</a>
+				batteries in space and its four LEDs are visible by the naked eye. I worked
+				on organizing satellite operations using <a href="http://www.freertos.org/">FreeRTOS</a>
+				and optimizing data transmission, especially error packaging.
+				<br><br>
+				I became project manager and co-president in 2018, so in addition to coordinating satellite
+				operations and managing our over 75 members, I led the design of our
+				next CubeSat, PVDX. I was responsible for communication with NASA, the University,
+				and any other external entity.
+				<br><br>
+				For more information, you can visit the team website <a href="https://brownspace.org/">here</a>.
+				View our team GitHub <a href="https://github.com/BrownSpaceEngineering/">here</a>.
+			</p>
+		</div>
+
+		<div id="project-wikispeedia">
+			<p class="option">wikispeedia</p>
+			<p class="time-frame smaller-text">March - May 2017</p>
+			<p class="smaller-text">
+				The <a href="https://en.wikipedia.org/wiki/Wikiracing">Wikipedia game</a> is an old
+				standby for bored teens, but it's rarely done right. For my final project for
+				CS 32 at Brown, my group and I decided to perfect this age-old game.
+				I worked on the user experience, including lobby experience,
+				site-wide design, and graphic design. I also set up hosting so anyone can play online.
+				<br><br>
+				<strong>Want to play the game yourself?</strong> You can play
+				<a href="http://wikispeedia.herokuapp.com">here</a>! Since it is hosted on Heroku's
+				free tier, please give the app a few seconds to start up.
+				You can view the code on our
+				<a href="https://github.com/MckennaCisler/wikispeedia">project GitHub repo</a>.
+			</p>
+		</div>
+
+		<div id="project-this-site">
+			<p class="option">this-site</p>
+			<p class="time-frame smaller-text">Work in progress</p>
+			<p class="smaller-text">
+				Since mid 2016, I've been continuously redesigning 
+				<a href="https://jleiken.com">jleiken.com</a>, this site. In this most recent iteration,
+				I decided to mimic the experience of using a terminal. Nearly every semester
+				in college I found myself writing a REPL, so I have very strong ideas about what
+				I like and what I don't. Drawing on that experience, combined
+				with my modern Javascript experience at Amazon, I decided to write this website in
+				pure ES, no jQuery involved. The static version, for mobile and visitors unfamiliar
+				with terminals, serves as a template for the REPL version. This means that the
+				Javascript can pull from the HTML - there are very few strings that contain HTML code.
+				<br><br>
+				The site is hosted on Github Pages and uses Jekyll for Sass. If you're interested
+				in how I wrote this site, you can view the source code on 
+				<a href="https://github.com/jleiken/Portfolio-Website" target="_blank">Github</a>. 
+				The REPL is defined in <code>js/repl.js</code> and run from <code>js/index.js</code>.
+			</p>
+		</div>
+	</div>
+
+	<div class="item-group">
+		<p><span class="prompt">$</span> <span class="command">classes</span></p>
+		<table class="smaller-text" id="classes-table">
+			<colgroup>
+				<col style="width: 30%">
+				<col style="width: 70%">
+			</colgroup>
+			<tr>
+				<td>CSCI 1670</td>
+				<td>Operating Systems</td>
+			</tr>
+			<tr>
+				<td>CSCI 1470</td>
+				<td>Deep Learning</td>
+			</tr>
+			<tr>
+				<td>CSCI 1680</td>
+				<td>Computer Networks</td>
+			</tr>
+			<tr>
+				<td>CSCI 1730</td>
+				<td>Design and Implementation of Programming Languages</td>
+			</tr>
+			<tr>
+				<td>CSCI 1660</td>
+				<td>Intro to Computer Systems Security</td>
+			</tr>
+			<tr>
+				<td>CSCI 1951-S</td>
+				<td>Virtual Reality Software Review</td>
+			</tr>
+			<tr>
+				<td>CLPS 1250</td>
+				<td>Human Factors Design</td>
+			</tr>
+			<tr>
+				<td>ENGN 1760</td>
+				<td>Design of Space Systems</td>
+			</tr>
+			<tr>
+				<td>CSCI 1650</td>
+				<td>Software Security and Exploitation</td>
+			</tr>
+			<tr>
+				<td>CSCI 1300</td>
+				<td>User Interfaces and User Experience</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="item-group">
 		<p><span class="prompt">$</span> <span class="command">contact</span></p>
 		<p id="contact-email">Email: <a href="mailto:jacob@jleiken.com" target="_blank">jacob@jleiken.com</a></p>
 		<p id="contact-github">Github: <a href="https://github.com/jleiken" target="_blank">jleiken</a></p>
-		<p id="contact-linkedin">LinkedIn: <a href="https://www.linkedin.com/in/jacobleiken/" target="_blank">jacobleiken</a></p>
+		<p id="contact-linkedin">LinkedIn: <a href="https://www.linkedin.com/in/jacobleiken/"
+				target="_blank">jacobleiken</a></p>
 	</div>
 </div>

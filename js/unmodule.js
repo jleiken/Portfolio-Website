@@ -9,15 +9,18 @@ function clearScrollArea() {
 }
 
 // staticOn should be true to make it static, false to do the opposite
-function toStaticSite(staticOn) {
-    if (document.getElementById("active-group").hidden) {
-        // if we've already gone static, don't go back to active
+function toStaticSite(staticOn, wasClick) {
+    if (document.getElementById("active-group").hidden && !wasClick) {
+        // if we've already gone static, don't go back to active without a click
         return;
     }
-    if (staticOn === true || staticOn === []) {
-        clearScrollArea();
-        document.getElementById("initial-item-group").hidden = false;
-    }
+
+    clearScrollArea();
+    document.getElementById("initial-item-group").hidden = false;
     document.getElementById("active-group").hidden = staticOn;
+    document.getElementById("unstatic").hidden = !staticOn;
     document.getElementById("static-site").hidden = !staticOn;
+    if (staticOn) {
+        window.scrollTo(0, 0);
+    }
 }

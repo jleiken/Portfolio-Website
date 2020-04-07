@@ -35,7 +35,7 @@ function optsToHelpStr(opts) {
             output += `${highlight(opt, Colors.yellow)}|`;
         }
     }
-    return output.slice(0,-1) + `>`;
+    return output.slice(0, -1) + `>`;
 }
 
 export function helpFromCommandMap(commandMap) {
@@ -54,7 +54,11 @@ export function helpFromCommandMap(commandMap) {
     return new Command("help", [], helpHelpStr, (args) => { return output; })
 }
 
-export function outputFromOptsAndArgs(opts, optOuts, args) {
+export function outputFromOptsAndArgs(opts, optIdPrefix, args) {
+    let optOuts = [];
+    for (let i = 0; i < opts.length; i++) {
+        optOuts.push(document.getElementById(optIdPrefix + opts[i]).outerHTML);
+    }
     // check if we should print all
     if (args.length === 0) {
         return optOuts.join("");
@@ -70,7 +74,9 @@ export function outputFromOptsAndArgs(opts, optOuts, args) {
 
     // error if options were invalid
     if (output === "") {
-        output = `<p>Your options '${args}' were not recognized</p>`;
+        const plural = args.length > 1;
+        output = `<p>Your option${plural ? "s" : ""} '${args}' ${plural ? "were" : "was"} not recognized</p>`;
+        output = highlight(output, Colors.orange);
     }
     return output;
 }
