@@ -8,7 +8,7 @@ const commands = [
     new repl.Command("work", ["current", "microsoft-intern", "amazon", "brown-cs"],
         "Outputs the places I've worked - all if no option is provided",
         (opts, args) => util.outputFromOptsAndArgs(opts, "work-", args)),
-    new repl.Command("projects", ["taskr", "equisat", "wikispeedia", "this-site"],
+    new repl.Command("projects", ["rr", "taskr", "equisat", "wikispeedia", "this-site"],
         "Outputs the projects I've worked on - all if no option is provided",
         (opts, args) => util.outputFromOptsAndArgs(opts, "project-", args)),
     new repl.Command("classes", [],

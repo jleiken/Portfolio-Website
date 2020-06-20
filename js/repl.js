@@ -30,7 +30,7 @@ export class REPL {
         } else if (command === "") {
             commandOutput = "<p></p>";
         } else {
-            commandOutput = `<p>Your command: "${command}" was not recognized. Try help to get started</p>`;
+            commandOutput = `<p>Your command: "${command}" was not recognized. Try <span class="command">help</span> to get started</p>`;
         }
 
         // create the new item and add it to the scroll area
