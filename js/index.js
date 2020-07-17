@@ -4,7 +4,7 @@ import * as repl from "./repl.js";
 const commands = [
     new repl.Command("resume", [],
         "Outputs a link to my resume",
-        (opts, args) => `<p>Here's my <a href="https://drive.google.com/file/d/1Tq5pmC2qCVdoS1GEJAXiZDRt0Q_1u29O/view?usp=sharing" target="_blank">resume</a>.</p>`),
+        (opts, args) => `<p>Here's my <a href="https://drive.google.com/file/d/1Rd1gEE0ROxD5ufOsgLH-dp3MiImUd_2T/view?usp=sharing" target="_blank">resume</a>.</p>`),
     new repl.Command("work", ["current", "microsoft-intern", "amazon", "brown-cs"],
         "Outputs the places I've worked - all if no option is provided",
         (opts, args) => util.outputFromOptsAndArgs(opts, "work-", args)),
