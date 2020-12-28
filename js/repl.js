@@ -36,7 +36,8 @@ export class REPL {
         // create the new item and add it to the scroll area
         if (commandOutput) {
             let newItemGroup = document.createElement("div")
-            newItemGroup.className = "item-group";
+            newItemGroup.classList.add("item-group");
+            newItemGroup.classList.add("repl-result");
             newItemGroup.innerHTML = `<p>${cursor} ${input}</p>${commandOutput}`;
             this.scrollArea.insertBefore(newItemGroup, this.terminal.parentNode);
         }

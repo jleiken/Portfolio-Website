@@ -1,0 +1,15 @@
+#unstatic, #nav-bar, .repl-result, .prompt-group, .left-header, .classes-group, img {
+  display: none !important;
+}
+
+#static-site {
+  display: inline;
+}
+
+#content {
+  padding-top: 0;
+}
+
+body {
+  font-size: 1em;
+}
