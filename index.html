@@ -4,7 +4,7 @@ layout: default
 
 <div class="item-group" id="initial-item-group">
 	<p><span class="prompt">$</span> Jacob Leiken</p>
-	<p>Software Engineer. Microsoft. Brown University '20.</p>
+	<p>Technology Law Student. Former Software Engineer. NYU JD '25. Brown University '20.</p>
 
 	<a onclick="toStaticSite(false, true)" id="unstatic" class="smaller-text" href="javascript:void(0);" hidden>
 		For an interactive version of this site,
@@ -13,18 +13,36 @@ layout: default
 
 <div class="item-group prompt-group" id="active-group">
 	<div class="prompt">$</div>
-	<input type="text" id="terminal" placeholder="type your command here - try help">
+	<input type="text" id="terminal" placeholder="type your command here, then hit enter - try help">
 </div>
 
 <div id="static-site" hidden>
 	<div class="item-group">
+		<p><span class="prompt">$</span> <span class="command">about</span></p>
+
+		<div id="about">
+			<p class="option">about</p>
+			<p class="smaller-text">While I loved my time as a software engineer, I quickly decided it 
+				would not be my whole career. I've always wanted to work in public interest over corporate, 
+				but I still wanted to use my knowledge about technology. I believe law is the best field 
+				for that intersection. So, I now am a student at NYU Law and recipient of the Desmarais Law and Technology Scholarship.
+				At school, I've joined the <a href="https://www.law.nyu.edu/centers/ili/privacy_research_group">Privacy Research Group</a>,
+				<a href="https://www.law.nyu.edu/studentorganizations/rightsovertech">Rights over Tech</a>, 
+				and the <a href="https://www.law.nyu.edu/studentorganizations/suspensionrepresentationproject">Suspension Representation Project</a>. 
+			</p>
+		</div>
+	</div>
+
+	<div class="item-group">
 		<p><span class="prompt">$</span> <span class="command">work</span></p>
 
-		<div id="work-current">
+		<div id="work-microsoft">
 			<p class="option">microsoft</p>
-			<p class="time-frame smaller-text">August 2020 - </p>
-			<p class="smaller-text">In August 2020 I started as a full-time Software Engineer on Microsoft's
-				Test Automation Platform team. I am onboarding the Windows Servicing department to my team's services.</p>
+			<p class="time-frame smaller-text">August 2020 - August 2022</p>
+			<p class="smaller-text">For two years I worked as a full-time Software Engineer on Microsoft's
+				Test Automation Platform team. I on-boarded the Windows Servicing department to my team's services, 
+				saving tens of thousands of dollars a month in person hours. This enabled faster, more secure releases 
+				of Windows. I also became my team's infrastructure and recoverability expert.</p>
 		</div>
 
 		<div id="work-microsoft-intern">
@@ -158,52 +176,74 @@ layout: default
 
 	<div class="item-group classes-group">
 		<p><span class="prompt">$</span> <span class="command">classes</span></p>
-		<table class="smaller-text" id="classes-table">
-			<colgroup>
-				<col style="width: 30%">
-				<col style="width: 70%">
-			</colgroup>
-			<tr>
-				<td>CSCI 1670</td>
-				<td>Operating Systems</td>
-			</tr>
-			<tr>
-				<td>CSCI 1470</td>
-				<td>Deep Learning</td>
-			</tr>
-			<tr>
-				<td>CSCI 1680</td>
-				<td>Computer Networks</td>
-			</tr>
-			<tr>
-				<td>CSCI 1730</td>
-				<td>Design and Implementation of Programming Languages</td>
-			</tr>
-			<tr>
-				<td>CSCI 1660</td>
-				<td>Intro to Computer Systems Security</td>
-			</tr>
-			<tr>
-				<td>CSCI 1951-S</td>
-				<td>Virtual Reality Software Review</td>
-			</tr>
-			<tr>
-				<td>CLPS 1250</td>
-				<td>Human Factors Design</td>
-			</tr>
-			<tr>
-				<td>ENGN 1760</td>
-				<td>Design of Space Systems</td>
-			</tr>
-			<tr>
-				<td>CSCI 1650</td>
-				<td>Software Security and Exploitation</td>
-			</tr>
-			<tr>
-				<td>CSCI 1300</td>
-				<td>User Interfaces and User Experience</td>
-			</tr>
-		</table>
+
+		<div id="classes-law">
+			<p class="option">law</p>
+			<table class="smaller-text" id="classes-table">
+				<colgroup>
+					<col style="width: 30%">
+					<col style="width: 70%">
+				</colgroup>
+				<tr>
+					<td>Criminal Law</td>
+					<td>Fall 2022</td>
+				</tr>
+				<tr>
+					<td>Survey of IP</td>
+					<td>Spring 2023</td>
+				</tr>
+			</table>
+		</div>
+		
+		<div id="classes-undergrad">
+			<p class="option">undergraduate computer science and engineering classes</p>
+			<table class="smaller-text" id="classes-table">
+				<colgroup>
+					<col style="width: 30%">
+					<col style="width: 70%">
+				</colgroup>
+				<tr>
+					<td>CSCI 1670</td>
+					<td>Operating Systems</td>
+				</tr>
+				<tr>
+					<td>CSCI 1470</td>
+					<td>Deep Learning</td>
+				</tr>
+				<tr>
+					<td>CSCI 1680</td>
+					<td>Computer Networks</td>
+				</tr>
+				<tr>
+					<td>CSCI 1730</td>
+					<td>Design and Implementation of Programming Languages</td>
+				</tr>
+				<tr>
+					<td>CSCI 1660</td>
+					<td>Intro to Computer Systems Security</td>
+				</tr>
+				<tr>
+					<td>CSCI 1951-S</td>
+					<td>Virtual Reality Software Review</td>
+				</tr>
+				<tr>
+					<td>CLPS 1250</td>
+					<td>Human Factors Design</td>
+				</tr>
+				<tr>
+					<td>ENGN 1760</td>
+					<td>Design of Space Systems</td>
+				</tr>
+				<tr>
+					<td>CSCI 1650</td>
+					<td>Software Security and Exploitation</td>
+				</tr>
+				<tr>
+					<td>CSCI 1300</td>
+					<td>User Interfaces and User Experience</td>
+				</tr>
+			</table>
+		</div>
 	</div>
 
 	<div class="item-group">
