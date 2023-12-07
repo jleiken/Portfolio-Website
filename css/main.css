@@ -19,11 +19,6 @@
     --laptop-size: 1000px;
 }
 
-@import 
-    "layout",
-    "base"
-;
-
 body {
     background-color: var(--background-color);
     color: var(--text-color);
