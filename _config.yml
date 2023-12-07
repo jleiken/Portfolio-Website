@@ -1,7 +1,0 @@
-title: Jacob Leiken
-email: jacob@jleiken.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Personal site of Jacob Leiken, Software Engineer
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://jleiken.com" # the base hostname & protocol for your site, e.g. http://example.com
-github_username: "jleiken"

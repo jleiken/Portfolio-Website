@@ -1,256 +1,320 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="item-group" id="initial-item-group">
-	<p><span class="prompt">$</span> Jacob Leiken</p>
-	<p>Technology Law Student. Former Software Engineer. NYU JD '25. Brown University '20.</p>
+    <meta name="description" content="Jacob Leiken, law student and former software engineer">
+    <meta name="author" content="Jacob Leiken">
+    <meta name="application-name" content="JLeiken" />
 
-	<a onclick="toStaticSite(false, true)" id="unstatic" class="smaller-text" href="javascript:void(0);" hidden>
-		For an interactive version of this site,
-		tap here. It is hidden by default on smaller screen sizes.</a>
-</div>
+    <link rel="icon" href="assets/favicon.ico" />
 
-<div class="item-group prompt-group" id="active-group">
-	<div class="prompt">$</div>
-	<input type="text" id="terminal" placeholder="type your command here, then hit enter - try help">
-</div>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap" rel="stylesheet">
 
-<div id="static-site" hidden>
-	<div class="item-group">
-		<p><span class="prompt">$</span> <span class="command">about</span></p>
+    <script src="js/unmodule.js"></script>
+    <script type="module" src="js/index.js"></script>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/print.css" rel="stylesheet" media="print">
+    
+    <title>Jacob Leiken</title>
+</head>
 
-		<div id="about">
-			<p class="option">about</p>
-			<p class="smaller-text">While I loved my time as a software engineer, I quickly decided it 
-				would not be my whole career. I've always wanted to work in public interest over corporate, 
-				but I still wanted to use my knowledge about technology. I believe law is the best field 
-				for that intersection. So, I now am a student at NYU Law and recipient of the Desmarais Law and Technology Scholarship.
-				At school, I've joined the <a href="https://www.law.nyu.edu/centers/ili/privacy_research_group">Privacy Research Group</a>,
-				<a href="https://www.law.nyu.edu/studentorganizations/rightsovertech">Rights over Tech</a>, 
-				and the <a href="https://www.law.nyu.edu/studentorganizations/suspensionrepresentationproject">Suspension Representation Project</a>. 
-			</p>
-		</div>
-	</div>
+<body>
+    <div id="header">
+        <div class="left-header">
+            <h1>&lt; JL &gt;</h1>
+        </div>
+        
+        <ul id="nav-bar">
+            <a href="mailto:jacob@jleiken.com" target="_blank">
+                <li>Email</li>
+            </a>
+            <li>|</li>
+            <a href="https://drive.google.com/file/d/1Tq5pmC2qCVdoS1GEJAXiZDRt0Q_1u29O/view?usp=sharing" target="_blank">
+                <li>Resume</li>
+            </a>
+        </ul>
+    </div>
+    <div id="content">
+        <div class="item-group" id="initial-item-group">
+            <p><span class="prompt">$</span> Jacob Leiken</p>
+            <p>Technology Law Student. Former Software Engineer. NYU JD '25. Brown University '20.</p>
+        
+            <a onclick="toStaticSite(false, true)" id="unstatic" class="smaller-text" href="javascript:void(0);" hidden>
+                For an interactive version of this site,
+                tap here. It is hidden by default on smaller screen sizes.</a>
+        </div>
+        
+        <div class="item-group prompt-group" id="active-group">
+            <div class="prompt">$</div>
+            <input type="text" id="terminal" placeholder="type your command here, then hit enter - try typing 'help'">
+        </div>
+        
+        <div id="static-site" hidden>
+            <div class="item-group">
+                <p><span class="prompt">$</span> <span class="command">about</span></p>
+        
+                <div id="about">
+                    <p class="option">about</p>
+                    <p class="smaller-text">While I loved my time as a software engineer, I quickly decided it 
+                        would not be my whole career. I've always wanted to work in public interest over corporate, 
+                        but I still wanted to use my knowledge about technology. I believe law is the best field 
+                        for that intersection. So, I now am a student at NYU Law and recipient of the Desmarais Law and Technology Scholarship.
+                        At school, I'm a web designer and student fellow for the <a href="https://www.law.nyu.edu/centers/ili/privacy_research_group">Privacy Research Group</a>, president of 
+                        <a href="https://www.law.nyu.edu/studentorganizations/rightsovertech">Rights over Tech</a>, 
+                        and an intake manager for the <a href="https://www.law.nyu.edu/studentorganizations/suspensionrepresentationproject">Suspension Representation Project</a>. I am also a staff editor on the <a href="https://nyujlpp.org/">Journal of Law and Public Policy</a>.
+                    </p>
+                </div>
+            </div>
+        
+            <div class="item-group">
+                <p><span class="prompt">$</span> <span class="command">work</span></p>
+        
+                <div id="work-hausfeld">
+                    <p class="option">hausfeld</p>
+                    <p class="time-frame smaller-text">Summer 2024</p>
+                    <p class="smaller-text">In the summer between my 2L and 3L years, I will be a summer associate at Hausfeld LLP. Hausfeld is a global plaintiff law firm that handles complex litigation, including antitrust, environmental, technology, and human rights cases.</p>
+                </div>
+        
+                <div id="work-nyag">
+                    <p class="option">new york attorney general</p>
+                    <p class="time-frame smaller-text">Summer 2023</p>
+                    <p class="smaller-text">In the summer between my 1L and 2L years, I interned in Bureau of Internet and Technology at the New York Office of the Attorney General. I drafted a complaint for a special proceeding against a large technology company. I researched and communicated possible charges to the attorneys on case. I also drafted investigatory correspondence and settlement agreements over data breaches and illegal subscription practices. Finally, I conducted legal research relating to insurance and personal jurisdiction.</p>
+                </div>
+        
+                <div id="work-microsoft">
+                    <p class="option">microsoft</p>
+                    <p class="time-frame smaller-text">August 2020 - August 2022</p>
+                    <p class="smaller-text">For two years I worked as a full-time Software Engineer on Microsoft's
+                        Test Automation Platform team. I on-boarded the Windows Servicing department to my team's services, 
+                        saving tens of thousands of dollars a month in person hours. This enabled faster, more secure releases 
+                        of Windows. I also became my team's infrastructure and recoverability expert.</p>
+                </div>
+        
+                <div id="work-microsoft-intern">
+                    <p class="option">microsoft</p>
+                    <p class="time-frame smaller-text">Summer 2018 and Summer 2019</p>
+                    <p class="smaller-text">
+                        As a Software Engineering Intern in 2018 I worked on Intune for Android. I developed an open source
+                        Android
+                        example app demonstrating my team's SDK and fixed bugs.
+                        More information available below or by typing the command
+                        <span class="command">projects</span> <span class="option">taskr</span>
+                        <br><br>
+                        As a Software Engineering Intern in 2019 I worked on Windows Accessibility. I added features to
+                        Narrator,
+                        Window's screen reader, and participated in an award-winning Hackathon team</p>
+                </div>
+        
+                <div id="work-amazon">
+                    <p class="option">amazon</p>
+                    <p class="time-frame smaller-text">Summer 2017</p>
+                    <p class="smaller-text">As an Amazon Future Engineer I developed Alexa skills to help
+                        Amazon Sellers during the fulfillment process</p>
+                </div>
+        
+                <div id="work-brown-cs">
+                    <p class="option">brown department of computer science</p>
+                    <p class="time-frame smaller-text">May 2017 to May 2020</p>
+                    <p class="smaller-text">I TAed and HTAed for CSCI 0190: An Accelerated Introduction to Computer Science,
+                        TAed and HTAed for CSCI 0320: Intro to Software Eng,
+                        and TAed for CSCI 1730: Programming Languages.
+                        I managed students and TAs, developed assignments, graded, held office hours, and taught labs</p>
+                </div>
+            </div>
+        
+            <div class="item-group">
+                <p><span class="prompt">$</span> <span class="command">projects</span></p>
+        
+                <div id="project-rr">
+                    <p class="option">ragdoll run</p>
+                    <p class="time-frame smaller-text">May 2020 - Active Development</p>
+                    <p class="smaller-text">In the time in between my graduation and start at Microsoft,
+                        I decided to fulfill my childhood dream of publishing an app. In about a month,
+                        I developed <a href="https://apps.apple.com/us/app/ragdoll-run/id1517876289" target="_blank">Ragdoll
+                            Run, now available on the App Store.</a>
+                        <br><br>
+                        I built it using Apple's SpriteKit framework in addition to StoreKit, CloudKit, and
+                        Google AdMob. It fully supports iPhone, iPad, and iMessage. 50% of revenue from
+                        in-app purchases and ads is donated to non-profits.
+                    </p>
+                </div>
+        
+                <div id="project-taskr">
+                    <p class="option">taskr</p>
+                    <p class="time-frame smaller-text">May 2018 - August 2018</p>
+                    <p class="smaller-text">I was a Software Engineering Intern on
+                        <a href="https://www.microsoft.com/en-us/cloud-platform/microsoft-intune" target="_blank">Intune's</a>
+                        mobile app management (MAM) team for Android. They develop an SDK that allows IT
+                        pros to make tightly managed apps. I made an example app demonstrating how to use
+                        this SDK called Taskr. Taskr is open source and available on
+                        <a href="https://github.com/msintuneappsdk/Taskr-Sample-Intune-Android-App" target="_blank">GitHub</a>.
+                        <br><br>
+                        I finished this project in half of my internship, so I spent the rest of the
+                        time fixing bugs on sprints with my team. I specifically focused on bugs that
+                        had arisen from multi-process Android apps.
+                    </p>
+                </div>
+        
+                <div id="project-equisat">
+                    <p class="option">equisat</p>
+                    <p class="time-frame smaller-text">September 2016 - May 2020</p>
+                    <img src="assets/equisat-deployer.jpg" alt="EQUiSat as it was deployed out of the ISS" id="img-equisat">
+        
+                    <p class="smaller-text">
+                        Brown Space Engineering is are dedicated to making space more accessible for
+                        people of all backgrounds. Following our schematics, anyone can make a satellite
+                        for only $3,776. Successfully deployed on July 13th, 2018, EQUiSat is the first
+                        satellite to test <a href="https://en.wikipedia.org/wiki/Lithium_iron_phosphate_battery">LiFePO</a>
+                        batteries in space and its four LEDs are visible by the naked eye. I worked
+                        on organizing satellite operations using <a href="http://www.freertos.org/">FreeRTOS</a>
+                        and optimizing data transmission, especially error packaging.
+                        <br><br>
+                        I became project manager and co-president in 2018, so in addition to coordinating satellite
+                        operations and managing our over 75 members, I led the design of our
+                        next CubeSat, PVDX. I was responsible for communication with NASA, the University,
+                        and any other external entity.
+                        <br><br>
+                        For more information, you can visit the team website <a href="https://brownspace.org/">here</a>.
+                        View our team GitHub <a href="https://github.com/BrownSpaceEngineering/">here</a>.
+                    </p>
+                </div>
+        
+                <div id="project-wikispeedia">
+                    <p class="option">wikispeedia</p>
+                    <p class="time-frame smaller-text">March - May 2017</p>
+                    <p class="smaller-text">
+                        The <a href="https://en.wikipedia.org/wiki/Wikiracing">Wikipedia game</a> is an old
+                        standby for bored teens, but it's rarely done right. For my final project for
+                        CS 32 at Brown, my group and I decided to perfect this age-old game.
+                        I worked on the user experience, including lobby experience,
+                        site-wide design, and graphic design. I also set up hosting so anyone can play online.
+                        <br><br>
+                        <strong>Want to play the game yourself?</strong> You can play
+                        <a href="http://wikispeedia.herokuapp.com">here</a>! Since it is hosted on Heroku's
+                        free tier, please give the app a few seconds to start up.
+                        You can view the code on our
+                        <a href="https://github.com/MckennaCisler/wikispeedia">project GitHub repo</a>.
+                    </p>
+                </div>
+        
+                <div id="project-this-site">
+                    <p class="option">this-site</p>
+                    <p class="time-frame smaller-text">Work in progress</p>
+                    <p class="smaller-text">
+                        Since mid 2016, I've been continuously redesigning
+                        <a href="https://jleiken.com">jleiken.com</a>, this site. In this most recent iteration,
+                        I decided to mimic the experience of using a terminal. Nearly every semester
+                        in college I found myself writing a REPL, so I have very strong ideas about what
+                        I like and what I don't. Drawing on that experience, combined
+                        with my modern Javascript experience at Amazon, I decided to write this website in
+                        pure ES, no jQuery involved. The static version, for mobile and visitors unfamiliar
+                        with terminals, serves as a template for the REPL version. This means that the
+                        Javascript can pull from the HTML - there are very few strings that contain HTML code.
+                        <br><br>
+                        The site is hosted on Github Pages and uses Jekyll for Sass. If you're interested
+                        in how I wrote this site, you can view the source code on
+                        <a href="https://github.com/jleiken/Portfolio-Website" target="_blank">Github</a>.
+                        The REPL is defined in <code>js/repl.js</code> and run from <code>js/index.js</code>.
+                    </p>
+                </div>
+            </div>
+        
+            <div class="item-group classes-group">
+                <p><span class="prompt">$</span> <span class="command">classes</span></p>
+        
+                <div id="classes-law">
+                    <p class="option">law</p>
+                    <table class="smaller-text" id="classes-table">
+                        <colgroup>
+                            <col style="width: 30%">
+                            <col style="width: 70%">
+                        </colgroup>
+                        <tr>
+                            <td>Global Data Law</td>
+                            <td>Fall 2023</td>
+                        </tr>
+                        <tr>
+                            <td>Space and Planetary Law and Governance</td>
+                            <td>Fall 2023</td>
+                        </tr>
+                        <tr>
+                            <td>Constitutional Law</td>
+                            <td>Fall 2023</td>
+                        </tr>
+                        <tr>
+                            <td>Survey of IP</td>
+                            <td>Spring 2023</td>
+                        </tr>
+                        <tr>
+                            <td>Criminal Law</td>
+                            <td>Fall 2022</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div id="classes-undergrad">
+                    <p class="option">undergraduate computer science and engineering classes</p>
+                    <table class="smaller-text" id="classes-table">
+                        <colgroup>
+                            <col style="width: 30%">
+                            <col style="width: 70%">
+                        </colgroup>
+                        <tr>
+                            <td>CSCI 1670</td>
+                            <td>Operating Systems</td>
+                        </tr>
+                        <tr>
+                            <td>CSCI 1470</td>
+                            <td>Deep Learning</td>
+                        </tr>
+                        <tr>
+                            <td>CSCI 1680</td>
+                            <td>Computer Networks</td>
+                        </tr>
+                        <tr>
+                            <td>CSCI 1730</td>
+                            <td>Design and Implementation of Programming Languages</td>
+                        </tr>
+                        <tr>
+                            <td>CSCI 1660</td>
+                            <td>Intro to Computer Systems Security</td>
+                        </tr>
+                        <tr>
+                            <td>CSCI 1951-S</td>
+                            <td>Virtual Reality Software Review</td>
+                        </tr>
+                        <tr>
+                            <td>CLPS 1250</td>
+                            <td>Human Factors Design</td>
+                        </tr>
+                        <tr>
+                            <td>ENGN 1760</td>
+                            <td>Design of Space Systems</td>
+                        </tr>
+                        <tr>
+                            <td>CSCI 1650</td>
+                            <td>Software Security and Exploitation</td>
+                        </tr>
+                        <tr>
+                            <td>CSCI 1300</td>
+                            <td>User Interfaces and User Experience</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        
+            <div class="item-group">
+                <p><span class="prompt">$</span> <span class="command">contact</span></p>
+                <p id="contact-email">Email: <a href="mailto:jacob@jleiken.com" target="_blank">jacob@jleiken.com</a></p>
+                <p id="contact-github">Github: <a href="https://github.com/jleiken" target="_blank">jleiken</a></p>
+                <p id="contact-linkedin">LinkedIn: <a href="https://www.linkedin.com/in/jacobleiken/"
+                        target="_blank">jacobleiken</a></p>
+            </div>
+        </div>
+    </div>
+</body>
 
-	<div class="item-group">
-		<p><span class="prompt">$</span> <span class="command">work</span></p>
-
-		<div id="work-microsoft">
-			<p class="option">microsoft</p>
-			<p class="time-frame smaller-text">August 2020 - August 2022</p>
-			<p class="smaller-text">For two years I worked as a full-time Software Engineer on Microsoft's
-				Test Automation Platform team. I on-boarded the Windows Servicing department to my team's services, 
-				saving tens of thousands of dollars a month in person hours. This enabled faster, more secure releases 
-				of Windows. I also became my team's infrastructure and recoverability expert.</p>
-		</div>
-
-		<div id="work-microsoft-intern">
-			<p class="option">microsoft</p>
-			<p class="time-frame smaller-text">Summer 2018 and Summer 2019</p>
-			<p class="smaller-text">
-				As a Software Engineering Intern in 2018 I worked on Intune for Android. I developed an open source
-				Android
-				example app demonstrating my team's SDK and fixed bugs.
-				More information available below or by typing the command
-				<span class="command">projects</span> <span class="option">taskr</span>
-				<br><br>
-				As a Software Engineering Intern in 2019 I worked on Windows Accessibility. I added features to
-				Narrator,
-				Window's screen reader, and participated in an award-winning Hackathon team</p>
-		</div>
-
-		<div id="work-amazon">
-			<p class="option">amazon</p>
-			<p class="time-frame smaller-text">Summer 2017</p>
-			<p class="smaller-text">As an Amazon Future Engineer I developed Alexa skills to help
-				Amazon Sellers during the fulfillment process</p>
-		</div>
-
-		<div id="work-brown-cs">
-			<p class="option">brown department of computer science</p>
-			<p class="time-frame smaller-text">May 2017 to May 2020</p>
-			<p class="smaller-text">I TAed and HTAed for CSCI 0190: An Accelerated Introduction to Computer Science,
-				TAed and HTAed for CSCI 0320: Intro to Software Eng,
-				and TAed for CSCI 1730: Programming Languages.
-				I managed students and TAs, developed assignments, graded, held office hours, and taught labs</p>
-		</div>
-	</div>
-
-	<div class="item-group">
-		<p><span class="prompt">$</span> <span class="command">projects</span></p>
-
-		<div id="project-rr">
-			<p class="option">ragdoll run</p>
-			<p class="time-frame smaller-text">May 2020 - Active Development</p>
-			<p class="smaller-text">In the time in between my graduation and start at Microsoft,
-				I decided to fulfill my childhood dream of publishing an app. In about a month,
-				I developed <a href="https://apps.apple.com/us/app/ragdoll-run/id1517876289" target="_blank">Ragdoll
-					Run, now available on the App Store.</a>
-				<br><br>
-				I built it using Apple's SpriteKit framework in addition to StoreKit, CloudKit, and
-				Google AdMob. It fully supports iPhone, iPad, and iMessage. 50% of revenue from
-				in-app purchases and ads is donated to non-profits.
-			</p>
-		</div>
-
-		<div id="project-taskr">
-			<p class="option">taskr</p>
-			<p class="time-frame smaller-text">May 2018 - August 2018</p>
-			<p class="smaller-text">I was a Software Engineering Intern on
-				<a href="https://www.microsoft.com/en-us/cloud-platform/microsoft-intune" target="_blank">Intune's</a>
-				mobile app management (MAM) team for Android. They develop an SDK that allows IT
-				pros to make tightly managed apps. I made an example app demonstrating how to use
-				this SDK called Taskr. Taskr is open source and available on
-				<a href="https://github.com/msintuneappsdk/Taskr-Sample-Intune-Android-App" target="_blank">GitHub</a>.
-				<br><br>
-				I finished this project in half of my internship, so I spent the rest of the
-				time fixing bugs on sprints with my team. I specifically focused on bugs that
-				had arisen from multi-process Android apps.
-			</p>
-		</div>
-
-		<div id="project-equisat">
-			<p class="option">equisat</p>
-			<p class="time-frame smaller-text">September 2016 - May 2020</p>
-			<img src="assets/equisat-deployer.jpg" alt="EQUiSat as it was deployed out of the ISS" id="img-equisat">
-
-			<p class="smaller-text">
-				Brown Space Engineering is are dedicated to making space more accessible for
-				people of all backgrounds. Following our schematics, anyone can make a satellite
-				for only $3,776. Successfully deployed on July 13th, 2018, EQUiSat is the first
-				satellite to test <a href="https://en.wikipedia.org/wiki/Lithium_iron_phosphate_battery">LiFePO</a>
-				batteries in space and its four LEDs are visible by the naked eye. I worked
-				on organizing satellite operations using <a href="http://www.freertos.org/">FreeRTOS</a>
-				and optimizing data transmission, especially error packaging.
-				<br><br>
-				I became project manager and co-president in 2018, so in addition to coordinating satellite
-				operations and managing our over 75 members, I led the design of our
-				next CubeSat, PVDX. I was responsible for communication with NASA, the University,
-				and any other external entity.
-				<br><br>
-				For more information, you can visit the team website <a href="https://brownspace.org/">here</a>.
-				View our team GitHub <a href="https://github.com/BrownSpaceEngineering/">here</a>.
-			</p>
-		</div>
-
-		<div id="project-wikispeedia">
-			<p class="option">wikispeedia</p>
-			<p class="time-frame smaller-text">March - May 2017</p>
-			<p class="smaller-text">
-				The <a href="https://en.wikipedia.org/wiki/Wikiracing">Wikipedia game</a> is an old
-				standby for bored teens, but it's rarely done right. For my final project for
-				CS 32 at Brown, my group and I decided to perfect this age-old game.
-				I worked on the user experience, including lobby experience,
-				site-wide design, and graphic design. I also set up hosting so anyone can play online.
-				<br><br>
-				<strong>Want to play the game yourself?</strong> You can play
-				<a href="http://wikispeedia.herokuapp.com">here</a>! Since it is hosted on Heroku's
-				free tier, please give the app a few seconds to start up.
-				You can view the code on our
-				<a href="https://github.com/MckennaCisler/wikispeedia">project GitHub repo</a>.
-			</p>
-		</div>
-
-		<div id="project-this-site">
-			<p class="option">this-site</p>
-			<p class="time-frame smaller-text">Work in progress</p>
-			<p class="smaller-text">
-				Since mid 2016, I've been continuously redesigning
-				<a href="https://jleiken.com">jleiken.com</a>, this site. In this most recent iteration,
-				I decided to mimic the experience of using a terminal. Nearly every semester
-				in college I found myself writing a REPL, so I have very strong ideas about what
-				I like and what I don't. Drawing on that experience, combined
-				with my modern Javascript experience at Amazon, I decided to write this website in
-				pure ES, no jQuery involved. The static version, for mobile and visitors unfamiliar
-				with terminals, serves as a template for the REPL version. This means that the
-				Javascript can pull from the HTML - there are very few strings that contain HTML code.
-				<br><br>
-				The site is hosted on Github Pages and uses Jekyll for Sass. If you're interested
-				in how I wrote this site, you can view the source code on
-				<a href="https://github.com/jleiken/Portfolio-Website" target="_blank">Github</a>.
-				The REPL is defined in <code>js/repl.js</code> and run from <code>js/index.js</code>.
-			</p>
-		</div>
-	</div>
-
-	<div class="item-group classes-group">
-		<p><span class="prompt">$</span> <span class="command">classes</span></p>
-
-		<div id="classes-law">
-			<p class="option">law</p>
-			<table class="smaller-text" id="classes-table">
-				<colgroup>
-					<col style="width: 30%">
-					<col style="width: 70%">
-				</colgroup>
-				<tr>
-					<td>Criminal Law</td>
-					<td>Fall 2022</td>
-				</tr>
-				<tr>
-					<td>Survey of IP</td>
-					<td>Spring 2023</td>
-				</tr>
-			</table>
-		</div>
-		
-		<div id="classes-undergrad">
-			<p class="option">undergraduate computer science and engineering classes</p>
-			<table class="smaller-text" id="classes-table">
-				<colgroup>
-					<col style="width: 30%">
-					<col style="width: 70%">
-				</colgroup>
-				<tr>
-					<td>CSCI 1670</td>
-					<td>Operating Systems</td>
-				</tr>
-				<tr>
-					<td>CSCI 1470</td>
-					<td>Deep Learning</td>
-				</tr>
-				<tr>
-					<td>CSCI 1680</td>
-					<td>Computer Networks</td>
-				</tr>
-				<tr>
-					<td>CSCI 1730</td>
-					<td>Design and Implementation of Programming Languages</td>
-				</tr>
-				<tr>
-					<td>CSCI 1660</td>
-					<td>Intro to Computer Systems Security</td>
-				</tr>
-				<tr>
-					<td>CSCI 1951-S</td>
-					<td>Virtual Reality Software Review</td>
-				</tr>
-				<tr>
-					<td>CLPS 1250</td>
-					<td>Human Factors Design</td>
-				</tr>
-				<tr>
-					<td>ENGN 1760</td>
-					<td>Design of Space Systems</td>
-				</tr>
-				<tr>
-					<td>CSCI 1650</td>
-					<td>Software Security and Exploitation</td>
-				</tr>
-				<tr>
-					<td>CSCI 1300</td>
-					<td>User Interfaces and User Experience</td>
-				</tr>
-			</table>
-		</div>
-	</div>
-
-	<div class="item-group">
-		<p><span class="prompt">$</span> <span class="command">contact</span></p>
-		<p id="contact-email">Email: <a href="mailto:jacob@jleiken.com" target="_blank">jacob@jleiken.com</a></p>
-		<p id="contact-github">Github: <a href="https://github.com/jleiken" target="_blank">jleiken</a></p>
-		<p id="contact-linkedin">LinkedIn: <a href="https://www.linkedin.com/in/jacobleiken/"
-				target="_blank">jacobleiken</a></p>
-	</div>
-</div>
+</html>

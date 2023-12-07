@@ -1,0 +1,155 @@
+/* Variables */
+:root {
+    --base-font-family: "Roboto Mono", sans-serif;
+    --base-font-size: 1.33em;
+    --base-font-weight: 400;
+
+    --text-spacing-unit: 10px;
+    --spacing-unit: 40px;
+
+    --background-color: #2B292E;
+    --text-color: #CCCCCC;
+    --red: #ff6188;
+    --orange: #fc9867;
+    --yellow: #ffd866;
+    --green: #a9dc76;
+    --blue: #78dce8;
+    --purple: #ab9df2;
+
+    --laptop-size: 1000px;
+}
+
+@import 
+    "layout",
+    "base"
+;
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--base-font-family);
+    font-size: var(--base-font-size);
+    margin: 0;
+}
+
+#initial-item-group > p:nth-child(1) {
+    color: var(--red);
+}
+
+#initial-item-group > p:nth-child(2) {
+    color: var(--purple);
+}
+
+a {
+    color: var(--blue);
+}
+
+.command {
+    color: var(--green);
+}
+
+.option {
+    color: var(--yellow);
+}
+
+.time-frame {
+    color: var(--purple);
+}
+
+/* website header */
+#header h1 {
+	font-size: var(--base-font-size);
+}
+
+#nav-bar li {
+	display: inline-block;
+	font-weight: 500;
+}
+
+#nav-bar a {
+	color: white;
+	text-decoration: none;
+}
+
+#nav-bar a:hover {
+	color: #d4d4d4
+}
+
+#header {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+
+	top: 0;
+	padding: 0 20px;
+	width: -webkit-fill-available;
+	width: -moz-available;
+	position: fixed;
+
+	background-color: #383C3F;
+	color: white;
+}
+
+/* terminal formatting */
+#content {
+	padding-top: 2em;
+	margin: var(--spacing-unit);
+}
+
+.item-group > p {
+	margin-bottom: var(--text-spacing-unit);
+	margin-top: 0;
+}
+
+.item-group {
+	margin-top: var(--spacing-unit);
+}
+
+.prompt {
+	margin-right: 0;
+	display: inline;
+	color: var(--text-color);
+}
+
+#terminal {
+	border: none;
+	border-bottom: 2px solid var(--text-color);
+	background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--base-font-family);
+	font-size: 1em;
+	width: 95%;
+}
+
+/* general */
+.indented {
+	margin-left: var(--spacing-unit);
+}
+
+table {
+	width: fit-content;
+	border-collapse: separate;
+	border-spacing: 1em 0;
+}
+
+table tr td:nth-child(odd) {
+	text-align: right;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+table tr td:nth-child(even) {
+	text-align: left;
+}
+
+.smaller-text {
+	font-size: 0.8em;
+}
+
+#img-equisat {
+	max-width: 25em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}

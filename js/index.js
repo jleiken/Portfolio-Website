@@ -8,7 +8,7 @@ const commands = [
     new repl.Command("about", [],
         "Outputs a short blurb about me",
         (opts, args) => document.getElementById("about").innerHTML),
-    new repl.Command("work", ["microsoft", "microsoft-intern", "amazon", "brown-cs"],
+    new repl.Command("work", ["hausfeld", "nyag", "microsoft", "microsoft-intern", "amazon", "brown-cs"],
         "Outputs the places I've worked - all if no option is provided",
         (opts, args) => util.outputFromOptsAndArgs(opts, "work-", args)),
     new repl.Command("projects", ["rr", "taskr", "equisat", "wikispeedia", "this-site"],
