@@ -18,6 +18,7 @@ function toStaticSite(staticOn, wasClick) {
     clearScrollArea();
     document.getElementById("initial-item-group").hidden = false;
     document.getElementById("active-group").hidden = staticOn;
+    document.getElementById("help-message").hidden = staticOn;
     document.getElementById("unstatic").hidden = !staticOn;
     document.getElementById("static-site").hidden = !staticOn;
     if (staticOn) {

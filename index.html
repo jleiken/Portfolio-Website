@@ -41,10 +41,10 @@
         <div class="item-group" id="initial-item-group">
             <p><span class="prompt">$</span> Jacob Leiken</p>
             <p>Technology Law Student. Former Software Engineer. NYU JD '25. Brown University '20.</p>
+
+            <p id="help-message" class="smaller-text">Welcome to my website! This site emulates a terminal, so if you just want the information without figuring out how to use it, click <a onclick="toStaticSite(true)" href="javascript:void(0);">here</a>. For the full interactive experience, try typing "help" in the box below then hitting the enter key.</p>
         
-            <a onclick="toStaticSite(false, true)" id="unstatic" class="smaller-text" href="javascript:void(0);" hidden>
-                For an interactive version of this site,
-                tap here. It is hidden by default on smaller screen sizes.</a>
+            <a onclick="toStaticSite(false, true)" id="unstatic" class="smaller-text" href="javascript:void(0);" hidden>For an interactive version of this site, tap or click here.</a>
         </div>
         
         <div class="item-group prompt-group" id="active-group">
@@ -62,9 +62,7 @@
                         would not be my whole career. I've always wanted to work in public interest over corporate, 
                         but I still wanted to use my knowledge about technology. I believe law is the best field 
                         for that intersection. So, I now am a student at NYU Law and recipient of the Desmarais Law and Technology Scholarship.
-                        At school, I'm a web designer and student fellow for the <a href="https://www.law.nyu.edu/centers/ili/privacy_research_group">Privacy Research Group</a>, president of 
-                        <a href="https://www.law.nyu.edu/studentorganizations/rightsovertech">Rights over Tech</a>, 
-                        and an intake manager for the <a href="https://www.law.nyu.edu/studentorganizations/suspensionrepresentationproject">Suspension Representation Project</a>. I am also a staff editor on the <a href="https://nyujlpp.org/">Journal of Law and Public Policy</a>.
+                        At school, I'm Senior Online Editor on the <a href="https://nyujlpp.org/">Journal of Law and Public Policy</a>, web designer and a student fellow for the <a href="https://www.law.nyu.edu/centers/ili/privacy_research_group">Privacy Research Group</a>, and a research assistant for Professor Sunoo Park. As a 2L, I was president of <a href="https://www.law.nyu.edu/studentorganizations/rightsovertech">Rights over Tech</a>, and an intake manager for the <a href="https://www.law.nyu.edu/studentorganizations/suspensionrepresentationproject">Suspension Representation Project</a>.
                     </p>
                 </div>
             </div>
@@ -74,16 +72,16 @@
         
                 <div id="work-hausfeld">
                     <p class="option">hausfeld</p>
-                    <p class="time-frame smaller-text">Summer 2024</p>
-                    <p class="smaller-text">In the summer between my 2L and 3L years, I will be a summer associate at Hausfeld LLP. Hausfeld is a global plaintiff law firm that handles complex litigation, including antitrust, environmental, technology, and human rights cases.</p>
+                    <p class="time-frame smaller-text">Summer, Fall 2024</p>
+                    <p class="smaller-text">In the summer between my 2L and 3L years and in the fall of my 3L year, I was a Summer Associate and Law Clerk at Hausfeld LLP, a global plaintiff law firm. I will be a summer associate at Hausfeld LLP. I drafted legal research memos across all the firm's practice areas including antitrust, environmental, data privacy, and human rights cases. I also wrote sections and created informational graphics for an antitrust complaint against a large technology company.</p>
                 </div>
-        
+
                 <div id="work-nyag">
                     <p class="option">new york attorney general</p>
                     <p class="time-frame smaller-text">Summer 2023</p>
                     <p class="smaller-text">In the summer between my 1L and 2L years, I interned in Bureau of Internet and Technology at the New York Office of the Attorney General. I drafted a complaint for a special proceeding against a large technology company. I researched and communicated possible charges to the attorneys on case. I also drafted investigatory correspondence and settlement agreements over data breaches and illegal subscription practices. Finally, I conducted legal research relating to insurance and personal jurisdiction.</p>
                 </div>
-        
+
                 <div id="work-microsoft">
                     <p class="option">microsoft</p>
                     <p class="time-frame smaller-text">August 2020 - August 2022</p>
@@ -92,7 +90,7 @@
                         saving tens of thousands of dollars a month in person hours. This enabled faster, more secure releases 
                         of Windows. I also became my team's infrastructure and recoverability expert.</p>
                 </div>
-        
+
                 <div id="work-microsoft-intern">
                     <p class="option">microsoft</p>
                     <p class="time-frame smaller-text">Summer 2018 and Summer 2019</p>
@@ -105,23 +103,45 @@
                         <br><br>
                         As a Software Engineering Intern in 2019 I worked on Windows Accessibility. I added features to
                         Narrator,
-                        Window's screen reader, and participated in an award-winning Hackathon team</p>
+                        Window's screen reader, and participated in an award-winning Hackathon team.</p>
                 </div>
         
                 <div id="work-amazon">
                     <p class="option">amazon</p>
                     <p class="time-frame smaller-text">Summer 2017</p>
                     <p class="smaller-text">As an Amazon Future Engineer I developed Alexa skills to help
-                        Amazon Sellers during the fulfillment process</p>
+                        Amazon Sellers during the fulfillment process.</p>
                 </div>
         
                 <div id="work-brown-cs">
                     <p class="option">brown department of computer science</p>
                     <p class="time-frame smaller-text">May 2017 to May 2020</p>
-                    <p class="smaller-text">I TAed and HTAed for CSCI 0190: An Accelerated Introduction to Computer Science,
-                        TAed and HTAed for CSCI 0320: Intro to Software Eng,
-                        and TAed for CSCI 1730: Programming Languages.
-                        I managed students and TAs, developed assignments, graded, held office hours, and taught labs</p>
+                    <p class="smaller-text">I was a teaching assistant then head teaching assistant for CSCI 0190: An Accelerated Introduction to Computer Science, CSCI 0320: Intro to Software Eng, and a teaching assistant for CSCI 1730: Programming Languages. As a teaching assistant, I developed assignments, graded, held office hours, and taught labs. As a head teaching assistant, I performed the previous duties while managing the rest of the (up to 25 person) teaching assistant staff.</p>
+                </div>
+            </div>
+
+            <div class="item-group">
+                <p><span class="prompt">$</span> <span class="command">publications</span></p>
+
+                <div id="publication-e2ee-ai">
+                    <p class="option">e2ee ai</p>
+                    <p class="time-frame smaller-text">Fall 2024</p>
+                    <p class="smaller-text"><a href="https://arxiv.org/abs/2412.20231">How To Think About End-To-End Encryption and AI: Training, Processing, Disclosure, and Consent</a>. I contributed the US legal analysis as a research assistant for Professor Sunoo Park.
+                    </p>
+                </div>
+
+                <div id="publication-fso">
+                    <p class="option">satellite fso</p>
+                    <p class="time-frame smaller-text">Fall 2023 - Fall 2024</p>
+                    <p class="smaller-text"><a href="https://nyujlpp.org/wp-content/uploads/2024/09/JLPP-26-4-Leiken.pdf">Satellite Internet and Laser Links: Are Universal FSO Standards Needed?</a>. Originally written as a research paper for Space and Planetary Law and Governance, I revised it with the help of NYU's Journal of Legislation and Public Policy for publication as a student note in the Journal's 26th volume.
+                    </p>
+                </div>
+
+                <div id="publication-data-governance-climate">
+                    <p class="option">data governance and climate change</p>
+                    <p class="time-frame smaller-text">Fall 2023</p>
+                    <p class="smaller-text"><a href="https://www.youtube.com/watch?v=3-SFSEKbFtk">Future-Proofing Data Governance to Prepare for Climate Change</a>. I drafted the abstract for this talk as a legal extern at Development Gateway: An IREX Venture, under the supervision of Beverley Hatcher-Mbu and Tom Orrell.
+                    </p>
                 </div>
             </div>
         
@@ -130,15 +150,16 @@
         
                 <div id="project-rr">
                     <p class="option">ragdoll run</p>
-                    <p class="time-frame smaller-text">May 2020 - Active Development</p>
+                    <p class="time-frame smaller-text">May 2020 - 2023</p>
                     <p class="smaller-text">In the time in between my graduation and start at Microsoft,
                         I decided to fulfill my childhood dream of publishing an app. In about a month,
-                        I developed <a href="https://apps.apple.com/us/app/ragdoll-run/id1517876289" target="_blank">Ragdoll
-                            Run, now available on the App Store.</a>
+                        I developed Ragdoll Run, which was formerly available on the App Store. I let the
+                        registration lapse when I ceased development during law school. The code is still
+                        available on <a href="https://github.com/jleiken/Ragdoll-Run">GitHub</a>
                         <br><br>
                         I built it using Apple's SpriteKit framework in addition to StoreKit, CloudKit, and
                         Google AdMob. It fully supports iPhone, iPad, and iMessage. 50% of revenue from
-                        in-app purchases and ads is donated to non-profits.
+                        in-app purchases and ads was donated to non-profits.
                     </p>
                 </div>
         
@@ -204,20 +225,7 @@
                     <p class="option">this-site</p>
                     <p class="time-frame smaller-text">Work in progress</p>
                     <p class="smaller-text">
-                        Since mid 2016, I've been continuously redesigning
-                        <a href="https://jleiken.com">jleiken.com</a>, this site. In this most recent iteration,
-                        I decided to mimic the experience of using a terminal. Nearly every semester
-                        in college I found myself writing a REPL, so I have very strong ideas about what
-                        I like and what I don't. Drawing on that experience, combined
-                        with my modern Javascript experience at Amazon, I decided to write this website in
-                        pure ES, no jQuery involved. The static version, for mobile and visitors unfamiliar
-                        with terminals, serves as a template for the REPL version. This means that the
-                        Javascript can pull from the HTML - there are very few strings that contain HTML code.
-                        <br><br>
-                        The site is hosted on Github Pages and uses Jekyll for Sass. If you're interested
-                        in how I wrote this site, you can view the source code on
-                        <a href="https://github.com/jleiken/Portfolio-Website" target="_blank">Github</a>.
-                        The REPL is defined in <code>js/repl.js</code> and run from <code>js/index.js</code>.
+                        Since mid 2016, I've been continuously redesigning <a href="https://jleiken.com">jleiken.com</a>, this website. In this most recent iteration, I decided to mimic the experience of using a terminal. The static version, for mobile and visitors unfamiliar with terminals, serves as a template for the terminal version. The site is hosted on Github Pages. If you're interested in how I wrote this site, you can view the source code on <a href="https://github.com/jleiken/Portfolio-Website" target="_blank">Github</a>.
                     </p>
                 </div>
             </div>
@@ -232,6 +240,18 @@
                             <col style="width: 30%">
                             <col style="width: 70%">
                         </colgroup>
+                        <tr>
+                            <td>AI and the Criminal Legal System</td>
+                            <td>Fall 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Antitrust Law</td>
+                            <td>Spring 2024</td>
+                        </tr>
+                        <tr>
+                            <td>Information Privacy Law</td>
+                            <td>Spring 2024</td>
+                        </tr>
                         <tr>
                             <td>Global Data Law</td>
                             <td>Fall 2023</td>

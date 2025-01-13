@@ -40,7 +40,7 @@ function optsToHelpStr(opts) {
 
 export function helpFromCommandMap(commandMap) {
     // general message
-    let output = `<p>Welcome to my website! This site emulates a terminal, so if you just want the information without figuring out how to use it, click <a onclick="toStaticSite(true)" href="javascript:void(0);">here</a>. If you'd like the full interactive experience, you can use the following commands:</p>`;
+    let output = `<p>This site emulates a terminal, so if you just want the information without figuring out how to use it, click <a onclick="toStaticSite(true)" href="javascript:void(0);">here</a>. If you'd like the full interactive experience, you can use the following commands:</p>`;
     // placeholder for this command's output
     const helpHelpStr = "Outputs this help message again";
     commandMap["help"] = new Command("help", [], helpHelpStr, () => { });
