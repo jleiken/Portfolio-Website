@@ -7,14 +7,14 @@
     --text-spacing-unit: 10px;
     --spacing-unit: 40px;
 
-    --background-color: #2B292E;
-    --text-color: #CCCCCC;
-    --red: #ff6188;
-    --orange: #fc9867;
-    --yellow: #ffd866;
-    --green: #a9dc76;
-    --blue: #78dce8;
-    --purple: #ab9df2;
+    --background-color: #FFFAF2;
+    --text-color: #1F1F1F;
+    --red: #fe4372;
+    --orange: #e77f4c;
+    --yellow: #ffbf00;
+    --green: #7fb945;
+    --blue: #57bfca;
+    --purple: #8c7ae1;
 
     --laptop-size: 1000px;
 }
@@ -62,7 +62,7 @@ a {
 }
 
 #nav-bar a {
-	color: white;
+	color: var(--text-color);
 	text-decoration: none;
 }
 
@@ -81,8 +81,8 @@ a {
 	width: -moz-available;
 	position: fixed;
 
-	background-color: #383C3F;
-	color: white;
+	background-color: var(--background-color);
+	box-shadow: 0px 5px var(--text-color);
 }
 
 /* terminal formatting */

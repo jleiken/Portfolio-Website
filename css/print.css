@@ -1,4 +1,4 @@
-#unstatic, #nav-bar, .repl-result, .prompt-group, .left-header, .classes-group, img {
+#unstatic, #nav-bar, .repl-result, .prompt-group, .left-header, img {
   display: none !important;
 }
 
