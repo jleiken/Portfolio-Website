@@ -11,7 +11,7 @@ const commands = [
     new repl.Command("work", ["hausfeld", "nyag", "microsoft", "microsoft-intern", "amazon", "brown-cs"],
         "Outputs the places I've worked - all if no option is provided",
         (opts, args) => util.outputFromOptsAndArgs(opts, "work-", args)),
-    new repl.Command("publications", ["e2ee-ai", "fso", "data-governance-climate"],
+    new repl.Command("publications", ["credibility", "e2ee-ai", "fso", "data-governance-climate"],
         "Outputs the publications I've contributed to - all if no option is provided",
         (opts, args) => util.outputFromOptsAndArgs(opts, "publication-", args)),
     new repl.Command("projects", ["rr", "taskr", "equisat", "wikispeedia", "this-site"],
